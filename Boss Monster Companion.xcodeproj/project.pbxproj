@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		44BE24FE22985310006718C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE24FD22985310006718C9 /* AppDelegate.swift */; };
-		44BE250022985310006718C9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE24FF22985310006718C9 /* FirstViewController.swift */; };
-		44BE250222985310006718C9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE250122985310006718C9 /* SecondViewController.swift */; };
+		44BE250022985310006718C9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE24FF22985310006718C9 /* MainViewController.swift */; };
+		44BE250222985310006718C9 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE250122985310006718C9 /* PlayersViewController.swift */; };
 		44BE250522985310006718C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44BE250322985310006718C9 /* Main.storyboard */; };
 		44BE250722985311006718C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44BE250622985311006718C9 /* Assets.xcassets */; };
 		44BE250A22985311006718C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44BE250822985311006718C9 /* LaunchScreen.storyboard */; };
+		44BE251222985397006718C9 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE251122985397006718C9 /* RulesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		44BE24FA22985310006718C9 /* Boss Monster Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Boss Monster Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44BE24FD22985310006718C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		44BE24FF22985310006718C9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		44BE250122985310006718C9 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		44BE24FF22985310006718C9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		44BE250122985310006718C9 /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
 		44BE250422985310006718C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44BE250622985311006718C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44BE250922985311006718C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44BE250B22985311006718C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44BE251122985397006718C9 /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				44BE24FD22985310006718C9 /* AppDelegate.swift */,
-				44BE24FF22985310006718C9 /* FirstViewController.swift */,
-				44BE250122985310006718C9 /* SecondViewController.swift */,
+				44BE24FF22985310006718C9 /* MainViewController.swift */,
+				44BE250122985310006718C9 /* PlayersViewController.swift */,
 				44BE250322985310006718C9 /* Main.storyboard */,
+				44BE251122985397006718C9 /* RulesViewController.swift */,
 				44BE250622985311006718C9 /* Assets.xcassets */,
 				44BE250822985311006718C9 /* LaunchScreen.storyboard */,
 				44BE250B22985311006718C9 /* Info.plist */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44BE250222985310006718C9 /* SecondViewController.swift in Sources */,
+				44BE250222985310006718C9 /* PlayersViewController.swift in Sources */,
 				44BE24FE22985310006718C9 /* AppDelegate.swift in Sources */,
-				44BE250022985310006718C9 /* FirstViewController.swift in Sources */,
+				44BE251222985397006718C9 /* RulesViewController.swift in Sources */,
+				44BE250022985310006718C9 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +291,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3HGZXTVAZM;
 				INFOPLIST_FILE = "Boss Monster Companion/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -304,6 +309,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3HGZXTVAZM;
 				INFOPLIST_FILE = "Boss Monster Companion/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
