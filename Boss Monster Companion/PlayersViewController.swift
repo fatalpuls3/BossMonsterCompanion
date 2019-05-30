@@ -10,12 +10,10 @@ import UIKit
 
 class PlayersViewController: UIViewController {
 
-    @IBOutlet weak var playerOne: UITextField!
-    
-    @IBOutlet weak var playerTwo: UITextField!
-    
-    @IBOutlet weak var playerThree: UITextField!
-    
+    @IBOutlet weak var playerOneName: UITextField!
+    @IBOutlet weak var playerTwoName: UITextField!
+    @IBOutlet weak var playerThreeName: UITextField!
+    @IBOutlet weak var playerFourName: UITextField!
     
     @IBAction func resetGame(_ sender: Any) {
     }
@@ -29,10 +27,10 @@ class PlayersViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @objc func dismissKeyboard (_ sender: UITapGestureRecognizer){
-        playerOne.resignFirstResponder()
-        playerTwo.resignFirstResponder()
-        playerThree.resignFirstResponder()
-        playerFour.resignFirstResponder()
+        playerOneName.resignFirstResponder()
+        playerTwoName.resignFirstResponder()
+        playerThreeName.resignFirstResponder()
+        playerFourName.resignFirstResponder()
 
     }
 
