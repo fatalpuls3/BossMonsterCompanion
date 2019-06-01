@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44295B8122A307D70060A10E /* 0SetUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 44295B7B22A307D60060A10E /* 0SetUp.png */; };
+		44295B8222A307D70060A10E /* 1BeginTurn.png in Resources */ = {isa = PBXBuildFile; fileRef = 44295B7C22A307D60060A10E /* 1BeginTurn.png */; };
+		44295B8322A307D70060A10E /* 4AdventurePhase.png in Resources */ = {isa = PBXBuildFile; fileRef = 44295B7D22A307D60060A10E /* 4AdventurePhase.png */; };
+		44295B8422A307D70060A10E /* 2BuildPhase.png in Resources */ = {isa = PBXBuildFile; fileRef = 44295B7E22A307D60060A10E /* 2BuildPhase.png */; };
+		44295B8522A307D70060A10E /* 3BaitPhase.png in Resources */ = {isa = PBXBuildFile; fileRef = 44295B7F22A307D70060A10E /* 3BaitPhase.png */; };
+		44295B8622A307D70060A10E /* 5EndOfTurn.png in Resources */ = {isa = PBXBuildFile; fileRef = 44295B8022A307D70060A10E /* 5EndOfTurn.png */; };
+		44295B8922A3104B0060A10E /* BossMonsterCompanion_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 44295B8822A3104B0060A10E /* BossMonsterCompanion_Icon.png */; };
 		44BE24FE22985310006718C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE24FD22985310006718C9 /* AppDelegate.swift */; };
 		44BE250022985310006718C9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE24FF22985310006718C9 /* MainViewController.swift */; };
 		44BE250222985310006718C9 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE250122985310006718C9 /* PlayersViewController.swift */; };
@@ -26,6 +33,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44295B7B22A307D60060A10E /* 0SetUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0SetUp.png; sourceTree = "<group>"; };
+		44295B7C22A307D60060A10E /* 1BeginTurn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1BeginTurn.png; sourceTree = "<group>"; };
+		44295B7D22A307D60060A10E /* 4AdventurePhase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4AdventurePhase.png; sourceTree = "<group>"; };
+		44295B7E22A307D60060A10E /* 2BuildPhase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2BuildPhase.png; sourceTree = "<group>"; };
+		44295B7F22A307D70060A10E /* 3BaitPhase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3BaitPhase.png; sourceTree = "<group>"; };
+		44295B8022A307D70060A10E /* 5EndOfTurn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5EndOfTurn.png; sourceTree = "<group>"; };
+		44295B8822A3104B0060A10E /* BossMonsterCompanion_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BossMonsterCompanion_Icon.png; sourceTree = "<group>"; };
 		44BE24FA22985310006718C9 /* Boss Monster Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Boss Monster Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44BE24FD22985310006718C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44BE24FF22985310006718C9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +72,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44295B8722A307DB0060A10E /* PhaseButtons */ = {
+			isa = PBXGroup;
+			children = (
+				44295B7B22A307D60060A10E /* 0SetUp.png */,
+				44295B7C22A307D60060A10E /* 1BeginTurn.png */,
+				44295B7E22A307D60060A10E /* 2BuildPhase.png */,
+				44295B7F22A307D70060A10E /* 3BaitPhase.png */,
+				44295B7D22A307D60060A10E /* 4AdventurePhase.png */,
+				44295B8022A307D70060A10E /* 5EndOfTurn.png */,
+			);
+			path = PhaseButtons;
+			sourceTree = "<group>";
+		};
 		44BE24F122985310006718C9 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +105,7 @@
 		44BE24FC22985310006718C9 /* Boss Monster Companion */ = {
 			isa = PBXGroup;
 			children = (
+				44295B8722A307DB0060A10E /* PhaseButtons */,
 				44F4EEC622A2DDBA00650584 /* HeroesBosses */,
 				44F4EEC322A2D19900650584 /* Audio */,
 				44BE24FD22985310006718C9 /* AppDelegate.swift */,
@@ -88,6 +116,7 @@
 				44BE250622985311006718C9 /* Assets.xcassets */,
 				44BE250822985311006718C9 /* LaunchScreen.storyboard */,
 				44BE250B22985311006718C9 /* Info.plist */,
+				44295B8822A3104B0060A10E /* BossMonsterCompanion_Icon.png */,
 			);
 			path = "Boss Monster Companion";
 			sourceTree = "<group>";
@@ -181,14 +210,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				44F4EEBF22A2D08A00650584 /* CaveTime.mp3 in Resources */,
+				44295B8322A307D70060A10E /* 4AdventurePhase.png in Resources */,
 				44F4EEC522A2DC3E00650584 /* LostMine.mp3 in Resources */,
+				44295B8122A307D70060A10E /* 0SetUp.png in Resources */,
 				44F4EED022A2E26500650584 /* BMB1.jpg in Resources */,
+				44295B8522A307D70060A10E /* 3BaitPhase.png in Resources */,
 				44BE250A22985311006718C9 /* LaunchScreen.storyboard in Resources */,
+				44295B8922A3104B0060A10E /* BossMonsterCompanion_Icon.png in Resources */,
+				44295B8622A307D70060A10E /* 5EndOfTurn.png in Resources */,
 				44F4EECC22A2DDD400650584 /* BMH1.png in Resources */,
 				44F4EECA22A2DDD400650584 /* BMH3.png in Resources */,
 				44BE250722985311006718C9 /* Assets.xcassets in Resources */,
 				44F4EED122A2E26500650584 /* BMB3.jpg in Resources */,
 				44F4EECB22A2DDD400650584 /* BMH2.png in Resources */,
+				44295B8222A307D70060A10E /* 1BeginTurn.png in Resources */,
+				44295B8422A307D70060A10E /* 2BuildPhase.png in Resources */,
 				44BE250522985310006718C9 /* Main.storyboard in Resources */,
 				44F4EED222A2E26500650584 /* BMB2.jpg in Resources */,
 			);

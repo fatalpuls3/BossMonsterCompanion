@@ -18,25 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wjh-bl-7Ge">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wjh-bl-7Ge">
                                 <rect key="frame" x="148.5" y="137.5" width="370" height="100"/>
                                 <color key="backgroundColor" red="0.085174279379999995" green="0.4037200453" blue="0.070180089230000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="YkM-6K-HUM"/>
                                     <constraint firstAttribute="width" constant="370" id="qBT-j1-9Jc"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Change Phase">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="boss-monster" translatesAutoresizingMaskIntoConstraints="NO" id="Tv9-h6-W0J">
-                                <rect key="frame" x="223.5" y="2" width="220" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="Ou4-oE-2fo"/>
-                                    <constraint firstAttribute="width" constant="220" id="SRG-qB-OBA"/>
-                                </constraints>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o2V-6m-vce" userLabel="BossImage">
                                 <rect key="frame" x="533.5" y="100" width="120" height="175"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -76,18 +68,26 @@
                                     <action selector="resetGame:" destination="2q7-no-Jwk" eventType="touchUpInside" id="A9q-IN-XRu"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BossMonsterCompanionLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Tv9-h6-W0J">
+                                <rect key="frame" x="183.5" y="20" width="300" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Swe-YY-l0n"/>
+                                    <constraint firstAttribute="height" constant="100" id="YPy-zT-hsU"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Tv9-h6-W0J" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="20" id="5Kf-ig-Xke"/>
                             <constraint firstItem="tZq-Qb-ZUo" firstAttribute="top" secondItem="tFD-Ji-F5R" secondAttribute="bottom" constant="4" id="7WJ-dH-saE"/>
                             <constraint firstItem="Wjh-bl-7Ge" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="80v-rq-uzn"/>
+                            <constraint firstItem="Tv9-h6-W0J" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="AtY-IO-FWn"/>
                             <constraint firstItem="o2V-6m-vce" firstAttribute="leading" secondItem="BgK-kC-hPA" secondAttribute="trailing" constant="65.5" id="Bp1-ag-kDB"/>
                             <constraint firstItem="tFD-Ji-F5R" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="Fpq-pf-vDJ"/>
                             <constraint firstItem="Wjh-bl-7Ge" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="NOL-W8-RaS"/>
                             <constraint firstItem="tZq-Qb-ZUo" firstAttribute="leading" secondItem="tFD-Ji-F5R" secondAttribute="trailing" constant="67" id="PWx-gl-jm9"/>
                             <constraint firstItem="1O9-WP-1pA" firstAttribute="top" secondItem="tFD-Ji-F5R" secondAttribute="bottom" constant="-29.5" id="U0S-WY-zkZ"/>
                             <constraint firstItem="o2V-6m-vce" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="UHf-US-oNX"/>
-                            <constraint firstItem="Tv9-h6-W0J" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="c6d-zB-HMY"/>
                             <constraint firstItem="BgK-kC-hPA" firstAttribute="top" secondItem="o2V-6m-vce" secondAttribute="bottom" constant="-1.5" id="cxy-iT-k0M"/>
                             <constraint firstItem="Wjh-bl-7Ge" firstAttribute="leading" secondItem="tFD-Ji-F5R" secondAttribute="trailing" constant="15" id="dS5-Iy-wrw"/>
                             <constraint firstItem="1O9-WP-1pA" firstAttribute="leading" secondItem="tFD-Ji-F5R" secondAttribute="trailing" constant="43.5" id="nQ5-mI-1ak"/>
@@ -648,10 +648,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BossMonsterCompanionLogo" width="504" height="180"/>
         <image name="Boss_icon_portrait" width="235" height="173"/>
         <image name="Soul" width="50" height="70"/>
         <image name="Wound" width="50" height="70"/>
-        <image name="boss-monster" width="511" height="172"/>
         <image name="reset" width="2476" height="976"/>
     </resources>
 </document>
