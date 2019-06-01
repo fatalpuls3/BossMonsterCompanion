@@ -15,6 +15,8 @@ class MainViewController: UIViewController {
     @IBOutlet weak var phaseButton: UIButton!
     @IBOutlet weak var enableAmbiance: UISwitch!
     @IBOutlet weak var reset: UIButton!
+    @IBOutlet weak var heroImage: UIImageView!
+    @IBOutlet weak var bossImage: UIImageView!
     
     // Dictionary of all phase values
     let phases = ["Beginning of Turn", "Build Phase", "Bait Phase", "Adventure Phase", "End of Turn"]
@@ -26,11 +28,12 @@ class MainViewController: UIViewController {
     
     // AVAudioPlayer class instance
     var audioPlayer = AVAudioPlayer()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         phaseButton.setTitle(phaseTitle, for: .normal)
+        heroBossImageRotate()
         
         // Setup single tap gesture recognition
         let singleTap = UITapGestureRecognizer(target: self, action: #selector(forwardPhase))
@@ -128,6 +131,22 @@ class MainViewController: UIViewController {
         buttonTapTwice = -1
         phaseIndex = -1
         
+    }
+    
+    func heroBossImageRotate() {
+        heroImage.animationDuration = 15
+        heroImage.animationImages = [
+            UIImage(named:"BMH1")!,
+            UIImage(named:"BMH2")!,
+            UIImage(named:"BMH3")! ]
+            heroImage.startAnimating()
+        
+        bossImage.animationDuration = 15
+        bossImage.animationImages = [
+            UIImage(named:"BMB1.jpg")!,
+            UIImage(named:"BMB2.jpg")!,
+            UIImage(named:"BMB3.jpg")! ]
+        bossImage.startAnimating()
     }
 }
 

@@ -33,20 +33,20 @@
                                     <constraint firstAttribute="width" constant="220" id="SRG-qB-OBA"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o2V-6m-vce">
-                                <rect key="frame" x="540" y="87.5" width="100" height="200"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o2V-6m-vce" userLabel="BossImage">
+                                <rect key="frame" x="532" y="100" width="120" height="175"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="baC-EQ-95V"/>
-                                    <constraint firstAttribute="height" constant="200" id="p9Q-Sg-fJD"/>
+                                    <constraint firstAttribute="width" constant="120" id="baC-EQ-95V"/>
+                                    <constraint firstAttribute="height" constant="175" id="p9Q-Sg-fJD"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tFD-Ji-F5R">
-                                <rect key="frame" x="27" y="87.5" width="100" height="200"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tFD-Ji-F5R" userLabel="HeroImage">
+                                <rect key="frame" x="15" y="100" width="120" height="175"/>
                                 <color key="backgroundColor" red="0.085174279379999995" green="0.4037200453" blue="0.070180089230000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="qSu-RA-xCP"/>
-                                    <constraint firstAttribute="height" constant="200" id="vG3-gN-9tC"/>
+                                    <constraint firstAttribute="width" constant="120" id="qSu-RA-xCP"/>
+                                    <constraint firstAttribute="height" constant="175" id="vG3-gN-9tC"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ambiance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1O9-WP-1pA">
@@ -84,16 +84,16 @@
                             <constraint firstItem="tFD-Ji-F5R" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="Fpq-pf-vDJ"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="Wjh-bl-7Ge" secondAttribute="trailing" constant="150" id="KkN-Vs-5J9"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="Wjh-bl-7Ge" secondAttribute="bottom" constant="110" id="Ljf-dx-MNI"/>
-                            <constraint firstItem="tZq-Qb-ZUo" firstAttribute="leading" secondItem="tFD-Ji-F5R" secondAttribute="trailing" constant="75" id="PWx-gl-jm9"/>
+                            <constraint firstItem="tZq-Qb-ZUo" firstAttribute="leading" secondItem="tFD-Ji-F5R" secondAttribute="trailing" constant="67" id="PWx-gl-jm9"/>
                             <constraint firstItem="Wjh-bl-7Ge" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="130" id="SHM-ap-wLR"/>
                             <constraint firstItem="o2V-6m-vce" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="UHf-US-oNX"/>
                             <constraint firstItem="Wjh-bl-7Ge" firstAttribute="top" secondItem="Tv9-h6-W0J" secondAttribute="bottom" constant="28" id="bBg-Vh-qk5"/>
                             <constraint firstItem="Tv9-h6-W0J" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="c6d-zB-HMY"/>
-                            <constraint firstItem="Wjh-bl-7Ge" firstAttribute="leading" secondItem="tFD-Ji-F5R" secondAttribute="trailing" constant="23" id="dS5-Iy-wrw"/>
+                            <constraint firstItem="Wjh-bl-7Ge" firstAttribute="leading" secondItem="tFD-Ji-F5R" secondAttribute="trailing" constant="15" id="dS5-Iy-wrw"/>
                             <constraint firstItem="tZq-Qb-ZUo" firstAttribute="top" secondItem="1O9-WP-1pA" secondAttribute="bottom" constant="7.5" id="fif-QQ-y72"/>
-                            <constraint firstItem="o2V-6m-vce" firstAttribute="leading" secondItem="BgK-kC-hPA" secondAttribute="trailing" constant="75" id="l0u-2U-k4o"/>
-                            <constraint firstItem="1O9-WP-1pA" firstAttribute="leading" secondItem="tFD-Ji-F5R" secondAttribute="trailing" constant="50" id="r5n-2h-vuE"/>
-                            <constraint firstItem="o2V-6m-vce" firstAttribute="leading" secondItem="Wjh-bl-7Ge" secondAttribute="trailing" constant="23" id="tyn-pq-LBc"/>
+                            <constraint firstItem="o2V-6m-vce" firstAttribute="leading" secondItem="BgK-kC-hPA" secondAttribute="trailing" constant="67" id="l0u-2U-k4o"/>
+                            <constraint firstItem="1O9-WP-1pA" firstAttribute="leading" secondItem="tFD-Ji-F5R" secondAttribute="trailing" constant="42" id="r5n-2h-vuE"/>
+                            <constraint firstItem="o2V-6m-vce" firstAttribute="leading" secondItem="Wjh-bl-7Ge" secondAttribute="trailing" constant="15" id="tyn-pq-LBc"/>
                             <constraint firstItem="Wjh-bl-7Ge" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="150" id="x7N-IV-y2c"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
@@ -102,7 +102,9 @@
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <connections>
+                        <outlet property="bossImage" destination="o2V-6m-vce" id="5lo-PD-JYB"/>
                         <outlet property="enableAmbiance" destination="tZq-Qb-ZUo" id="B1B-n2-h1j"/>
+                        <outlet property="heroImage" destination="tFD-Ji-F5R" id="RUA-0a-JeN"/>
                         <outlet property="phaseButton" destination="Wjh-bl-7Ge" id="6Ui-RZ-u7I"/>
                         <outlet property="reset" destination="BgK-kC-hPA" id="8UT-Sg-RvH"/>
                     </connections>
