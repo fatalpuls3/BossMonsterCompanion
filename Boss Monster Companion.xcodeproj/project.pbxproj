@@ -14,6 +14,9 @@
 		44BE250722985311006718C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44BE250622985311006718C9 /* Assets.xcassets */; };
 		44BE250A22985311006718C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44BE250822985311006718C9 /* LaunchScreen.storyboard */; };
 		44BE251222985397006718C9 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE251122985397006718C9 /* RulesViewController.swift */; };
+		44F4EEBF22A2D08A00650584 /* CaveTime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44F4EEBE22A2D08A00650584 /* CaveTime.mp3 */; };
+		44F4EEC222A2D18700650584 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F4EEC122A2D18700650584 /* AVFoundation.framework */; };
+		44F4EEC522A2DC3E00650584 /* LostMine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44F4EEC422A2DC3E00650584 /* LostMine.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		44BE250922985311006718C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44BE250B22985311006718C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44BE251122985397006718C9 /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
+		44F4EEBE22A2D08A00650584 /* CaveTime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CaveTime.mp3; sourceTree = "<group>"; };
+		44F4EEC122A2D18700650584 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		44F4EEC422A2DC3E00650584 /* LostMine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = LostMine.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44F4EEC222A2D18700650584 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,7 @@
 			children = (
 				44BE24FC22985310006718C9 /* Boss Monster Companion */,
 				44BE24FB22985310006718C9 /* Products */,
+				44F4EEC022A2D18700650584 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +66,7 @@
 		44BE24FC22985310006718C9 /* Boss Monster Companion */ = {
 			isa = PBXGroup;
 			children = (
+				44F4EEC322A2D19900650584 /* Audio */,
 				44BE24FD22985310006718C9 /* AppDelegate.swift */,
 				44BE24FF22985310006718C9 /* MainViewController.swift */,
 				44BE250122985310006718C9 /* PlayersViewController.swift */,
@@ -68,6 +77,23 @@
 				44BE250B22985311006718C9 /* Info.plist */,
 			);
 			path = "Boss Monster Companion";
+			sourceTree = "<group>";
+		};
+		44F4EEC022A2D18700650584 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44F4EEC122A2D18700650584 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44F4EEC322A2D19900650584 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				44F4EEC422A2DC3E00650584 /* LostMine.mp3 */,
+				44F4EEBE22A2D08A00650584 /* CaveTime.mp3 */,
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +154,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44F4EEBF22A2D08A00650584 /* CaveTime.mp3 in Resources */,
+				44F4EEC522A2DC3E00650584 /* LostMine.mp3 in Resources */,
 				44BE250A22985311006718C9 /* LaunchScreen.storyboard in Resources */,
 				44BE250722985311006718C9 /* Assets.xcassets in Resources */,
 				44BE250522985310006718C9 /* Main.storyboard in Resources */,

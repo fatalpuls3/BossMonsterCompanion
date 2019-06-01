@@ -102,7 +102,9 @@
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <connections>
+                        <outlet property="enableAmbiance" destination="tZq-Qb-ZUo" id="B1B-n2-h1j"/>
                         <outlet property="phaseButton" destination="Wjh-bl-7Ge" id="6Ui-RZ-u7I"/>
+                        <outlet property="reset" destination="BgK-kC-hPA" id="8UT-Sg-RvH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>

@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import AVFoundation
+
 
 class MainViewController: UIViewController {
-
+    
     @IBOutlet weak var phaseButton: UIButton!
+    @IBOutlet weak var enableAmbiance: UISwitch!
+    @IBOutlet weak var reset: UIButton!
     
     // Dictionary of all phase values
     let phases = ["Beginning of Turn", "Build Phase", "Bait Phase", "Adventure Phase", "End of Turn"]
@@ -20,6 +24,9 @@ class MainViewController: UIViewController {
     var buttonTapOnce = -1
     var buttonTapTwice = -1
     
+    // AVAudioPlayer class instance
+    var audioPlayer = AVAudioPlayer()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,6 +44,13 @@ class MainViewController: UIViewController {
         
         // Make single tap wait for double tap to not occur
         singleTap.require(toFail: doubleTap)
+        
+        // Ambiance switch target
+        enableAmbiance.addTarget(self, action: #selector(ambianceToggled(_:)), for: UIControl.Event.valueChanged)
+        
+        // Reset button target
+        reset.addTarget(self, action: #selector(resetGame(_:)), for: UIControl.Event.touchDown)
+        
     }
     
     @objc func backPhase() {
@@ -51,7 +65,7 @@ class MainViewController: UIViewController {
         setPhaseButton()
     }
     
-    func setPhaseButton(){
+    func setPhaseButton() {
         // if block for if button is tapped once
         if buttonTapOnce == 1, buttonTapTwice == 0 {
             // if block to ensure we dont go out of range and reset to index 0
@@ -76,6 +90,44 @@ class MainViewController: UIViewController {
                 phaseButton.setTitle(phases[phaseIndex], for: .normal)
             }
         }
+    }
+    // Ambiance toggle
+    @IBAction func ambianceToggled(_ sender: UISwitch) {
+        ambiance()
+    }
+    
+    // game reset button
+    @IBAction func resetGame(_ sender: UIButton) {
+        resetTapped()
+    }
+    
+    func ambiance() {
+        
+        // Ambiance Sound File
+        let ambianceAudio = Bundle.main.path(forResource: "LostMine", ofType: "mp3")
+        // try to get the init it with URL from above
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: ambianceAudio!))
+        } catch {
+            print("Unable To Find Ambiance Audio File")
+        }
+        
+        // Audio Toggle Action IF Statement
+        if enableAmbiance.isOn {
+            audioPlayer.play()
+        } else {
+            audioPlayer.stop()
+        }
+    }
+    
+    // Game reset button tapped actions
+    func resetTapped() {
+        // Resetting button taps and phaseIndex to start fresh on next phaseButton tap
+        phaseButton.setTitle("Set Up", for: .normal)
+        buttonTapOnce = -1
+        buttonTapTwice = -1
+        phaseIndex = -1
+        
     }
 }
 
