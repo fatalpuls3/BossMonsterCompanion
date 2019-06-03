@@ -15,14 +15,15 @@ class MainViewController: UIViewController {
     @IBOutlet weak var phaseButton: UIButton!
     @IBOutlet weak var enableAmbiance: UISwitch!
     @IBOutlet weak var reset: UIButton!
-    @IBOutlet weak var heroImage: UIImageView!
-    @IBOutlet weak var bossImage: UIImageView!
+    @IBOutlet weak var torchLeft: UIImageView!
+    @IBOutlet weak var torchRight: UIImageView!
     
     // Dictionary of all phase values
     let phases = ["1BeginTurn", "2BuildPhase", "3BaitPhase", "4AdventurePhase", "5EndOfTurn"]
     var phaseIndex = -1
     var phaseTitle = UIImage(named: "0SetUp")
     
+    // resetting button tap value
     var buttonTapOnce = -1
     var buttonTapTwice = -1
     
@@ -32,9 +33,10 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        torchFlame()
+        
+        // Init phase button to be Set Up image
         phaseButton.setImage(phaseTitle, for: UIControl.State.normal)
-        // phaseButton.setTitle(phaseTitle, for: .normal)
-        heroBossImageRotate()
         
         // Setup single tap gesture recognition
         let singleTap = UITapGestureRecognizer(target: self, action: #selector(forwardPhase))
@@ -56,19 +58,21 @@ class MainViewController: UIViewController {
         reset.addTarget(self, action: #selector(resetGame(_:)), for: UIControl.Event.touchDown)
         
     }
-    
+    // double back to go back phase
     @objc func backPhase() {
         buttonTapOnce = 0
         buttonTapTwice = 1
         setPhaseButton()
     }
     
+    // single tap to go forward phase
     @objc func forwardPhase() {
         buttonTapOnce = 1
         buttonTapTwice = 0
         setPhaseButton()
     }
     
+    // setting phase buttons based on conditions
     func setPhaseButton() {
         // if block for if button is tapped once
         if buttonTapOnce == 1, buttonTapTwice == 0 {
@@ -107,8 +111,8 @@ class MainViewController: UIViewController {
         resetTapped()
     }
     
+    // Ambiance function
     func ambiance() {
-        
         // Ambiance Sound File
         let ambianceAudio = Bundle.main.path(forResource: "LostMine", ofType: "mp3")
         // try to get the init it with URL from above
@@ -136,20 +140,23 @@ class MainViewController: UIViewController {
         
     }
     
-    func heroBossImageRotate() {
-        heroImage.animationDuration = 15
-        heroImage.animationImages = [
-            UIImage(named:"BMH1")!,
-            UIImage(named:"BMH2")!,
-            UIImage(named:"BMH3")! ]
-            heroImage.startAnimating()
-        
-        bossImage.animationDuration = 15
-        bossImage.animationImages = [
-            UIImage(named:"BMB1.jpg")!,
-            UIImage(named:"BMB2.jpg")!,
-            UIImage(named:"BMB3.jpg")! ]
-        bossImage.startAnimating()
+    // Heros and Boss image rotation
+    func torchFlame() {
+        torchLeft.animationDuration = 0.9
+        torchLeft.animationImages = [
+            UIImage(named:"torch1")!,
+            UIImage(named:"torch2")!,
+            UIImage(named:"torch3")!,
+            UIImage(named:"torch4")!]
+            torchLeft.startAnimating()
+
+        torchRight.animationDuration = 0.8
+        torchRight.animationImages = [
+            UIImage(named:"torch1")!,
+            UIImage(named:"torch2")!,
+            UIImage(named:"torch3")!,
+            UIImage(named:"torch4")!]
+        torchRight.startAnimating()
     }
 }
 
