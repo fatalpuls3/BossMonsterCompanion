@@ -17,6 +17,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var reset: UIButton!
     @IBOutlet weak var torchLeft: UIImageView!
     @IBOutlet weak var torchRight: UIImageView!
+    @IBOutlet weak var copyrightInfo: UIButton!
     
     // Dictionary of all phase values
     let phases = ["1BeginTurn", "2BuildPhase", "3BaitPhase", "4AdventurePhase", "5EndOfTurn"]

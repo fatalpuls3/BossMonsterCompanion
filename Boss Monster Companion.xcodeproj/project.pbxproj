@@ -28,6 +28,7 @@
 		44F4EEBF22A2D08A00650584 /* CaveTime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44F4EEBE22A2D08A00650584 /* CaveTime.mp3 */; };
 		44F4EEC222A2D18700650584 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F4EEC122A2D18700650584 /* AVFoundation.framework */; };
 		44F4EEC522A2DC3E00650584 /* LostMine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44F4EEC422A2DC3E00650584 /* LostMine.mp3 */; };
+		44F9131D22AA9BBF003AF3AD /* CopyrightInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F9131C22AA9BBF003AF3AD /* CopyrightInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		44F4EEBE22A2D08A00650584 /* CaveTime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CaveTime.mp3; sourceTree = "<group>"; };
 		44F4EEC122A2D18700650584 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		44F4EEC422A2DC3E00650584 /* LostMine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = LostMine.mp3; sourceTree = "<group>"; };
+		44F9131C22AA9BBF003AF3AD /* CopyrightInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				44F4EEC622A2DDBA00650584 /* TorchFlames */,
 				44F4EEC322A2D19900650584 /* Audio */,
 				44BE24FD22985310006718C9 /* AppDelegate.swift */,
+				44F9131C22AA9BBF003AF3AD /* CopyrightInfoViewController.swift */,
 				44BE24FF22985310006718C9 /* MainViewController.swift */,
 				44BE250122985310006718C9 /* PlayersViewController.swift */,
 				44BE250322985310006718C9 /* Main.storyboard */,
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44BE250222985310006718C9 /* PlayersViewController.swift in Sources */,
+				44F9131D22AA9BBF003AF3AD /* CopyrightInfoViewController.swift in Sources */,
 				44BE24FE22985310006718C9 /* AppDelegate.swift in Sources */,
 				44BE251222985397006718C9 /* RulesViewController.swift in Sources */,
 				44BE250022985310006718C9 /* MainViewController.swift in Sources */,
@@ -381,6 +385,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3HGZXTVAZM;
 				INFOPLIST_FILE = "Boss Monster Companion/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -399,6 +404,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3HGZXTVAZM;
 				INFOPLIST_FILE = "Boss Monster Companion/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
