@@ -109,9 +109,9 @@ Brotherwise Games LLC 2018</string>
                                 <color key="backgroundColor" red="0.085174279379999995" green="0.4037200453" blue="0.070180089230000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="YkM-6K-HUM"/>
-                                    <constraint firstAttribute="width" constant="370" id="qBT-j1-9Jc"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="370" id="qBT-j1-9Jc"/>
                                 </constraints>
-                                <state key="normal" title="Change Phase">
+                                <state key="normal">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -149,7 +149,7 @@ Brotherwise Games LLC 2018</string>
                                     <constraint firstAttribute="width" constant="90" id="9Lb-WR-dyt"/>
                                     <constraint firstAttribute="height" constant="40" id="N1X-Qm-LqY"/>
                                 </constraints>
-                                <state key="normal" title="Reset" image="reset"/>
+                                <state key="normal" image="reset"/>
                                 <connections>
                                     <action selector="resetGame:" destination="2q7-no-Jwk" eventType="touchUpInside" id="A9q-IN-XRu"/>
                                 </connections>
@@ -170,9 +170,11 @@ Brotherwise Games LLC 2018</string>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Wjh-bl-7Ge" firstAttribute="leading" secondItem="tFD-Ji-F5R" secondAttribute="trailing" constant="30" id="41f-32-1p9"/>
                             <constraint firstItem="Tv9-h6-W0J" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="20" id="5Kf-ig-Xke"/>
                             <constraint firstItem="tZq-Qb-ZUo" firstAttribute="top" secondItem="tFD-Ji-F5R" secondAttribute="bottom" constant="-31" id="7WJ-dH-saE"/>
                             <constraint firstItem="Wjh-bl-7Ge" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="80v-rq-uzn"/>
+                            <constraint firstItem="o2V-6m-vce" firstAttribute="leading" secondItem="Wjh-bl-7Ge" secondAttribute="trailing" constant="30" id="8IT-KM-35x"/>
                             <constraint firstItem="Tv9-h6-W0J" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="AtY-IO-FWn"/>
                             <constraint firstItem="o2V-6m-vce" firstAttribute="leading" secondItem="BgK-kC-hPA" secondAttribute="trailing" constant="80.5" id="Bp1-ag-kDB"/>
                             <constraint firstItem="tFD-Ji-F5R" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" constant="35" id="Fpq-pf-vDJ"/>
@@ -181,11 +183,11 @@ Brotherwise Games LLC 2018</string>
                             <constraint firstItem="1O9-WP-1pA" firstAttribute="top" secondItem="tFD-Ji-F5R" secondAttribute="bottom" constant="-64.5" id="U0S-WY-zkZ"/>
                             <constraint firstItem="o2V-6m-vce" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" constant="35" id="UHf-US-oNX"/>
                             <constraint firstItem="6bM-wi-ZDE" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="98" id="XEh-0J-zGt"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="1O9-WP-1pA" secondAttribute="trailing" constant="394" id="chN-cF-5Pe"/>
                             <constraint firstItem="BgK-kC-hPA" firstAttribute="top" secondItem="o2V-6m-vce" secondAttribute="bottom" constant="-36.5" id="cxy-iT-k0M"/>
-                            <constraint firstItem="Wjh-bl-7Ge" firstAttribute="leading" secondItem="tFD-Ji-F5R" secondAttribute="trailing" constant="30" id="dS5-Iy-wrw"/>
+                            <constraint firstItem="o2V-6m-vce" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="548.5" id="d3j-oi-iYM"/>
                             <constraint firstItem="6bM-wi-ZDE" firstAttribute="leading" secondItem="Tv9-h6-W0J" secondAttribute="trailing" constant="-5.5" id="fRa-hg-hNy"/>
                             <constraint firstItem="1O9-WP-1pA" firstAttribute="leading" secondItem="tFD-Ji-F5R" secondAttribute="trailing" constant="58.5" id="nQ5-mI-1ak"/>
-                            <constraint firstItem="o2V-6m-vce" firstAttribute="leading" secondItem="Wjh-bl-7Ge" secondAttribute="trailing" constant="30" id="tyn-pq-LBc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
