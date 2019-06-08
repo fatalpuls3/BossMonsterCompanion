@@ -14,6 +14,7 @@
 		44295B8522A307D70060A10E /* 3BaitPhase.png in Resources */ = {isa = PBXBuildFile; fileRef = 44295B7F22A307D70060A10E /* 3BaitPhase.png */; };
 		44295B8622A307D70060A10E /* 5EndOfTurn.png in Resources */ = {isa = PBXBuildFile; fileRef = 44295B8022A307D70060A10E /* 5EndOfTurn.png */; };
 		44295B8922A3104B0060A10E /* BossMonsterCompanion_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 44295B8822A3104B0060A10E /* BossMonsterCompanion_Icon.png */; };
+		442EC44022AC173E00E5B494 /* 256px-Speaker_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 442EC43F22AC173E00E5B494 /* 256px-Speaker_Icon.png */; };
 		44BE24FE22985310006718C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE24FD22985310006718C9 /* AppDelegate.swift */; };
 		44BE250022985310006718C9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE24FF22985310006718C9 /* MainViewController.swift */; };
 		44BE250222985310006718C9 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE250122985310006718C9 /* PlayersViewController.swift */; };
@@ -39,6 +40,7 @@
 		44295B7F22A307D70060A10E /* 3BaitPhase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3BaitPhase.png; sourceTree = "<group>"; };
 		44295B8022A307D70060A10E /* 5EndOfTurn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5EndOfTurn.png; sourceTree = "<group>"; };
 		44295B8822A3104B0060A10E /* BossMonsterCompanion_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BossMonsterCompanion_Icon.png; sourceTree = "<group>"; };
+		442EC43F22AC173E00E5B494 /* 256px-Speaker_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "256px-Speaker_Icon.png"; sourceTree = "<group>"; };
 		44BE24FA22985310006718C9 /* Boss Monster Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Boss Monster Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44BE24FD22985310006718C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44BE24FF22985310006718C9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		44BE24FC22985310006718C9 /* Boss Monster Companion */ = {
 			isa = PBXGroup;
 			children = (
+				442EC43F22AC173E00E5B494 /* 256px-Speaker_Icon.png */,
 				44295B8722A307DB0060A10E /* PhaseButtons */,
 				44F4EEC622A2DDBA00650584 /* TorchFlames */,
 				44F4EEC322A2D19900650584 /* Audio */,
@@ -209,6 +212,7 @@
 				44E5B67D22A4A4320043D926 /* torch3.png in Resources */,
 				44F4EEBF22A2D08A00650584 /* CaveTime.mp3 in Resources */,
 				44E5B67A22A4A4320043D926 /* torch2.png in Resources */,
+				442EC44022AC173E00E5B494 /* 256px-Speaker_Icon.png in Resources */,
 				44295B8322A307D70060A10E /* 4AdventurePhase.png in Resources */,
 				44F4EEC522A2DC3E00650584 /* LostMine.mp3 in Resources */,
 				44295B8122A307D70060A10E /* 0SetUp.png in Resources */,

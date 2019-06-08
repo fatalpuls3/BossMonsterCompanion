@@ -106,7 +106,7 @@ Brotherwise Games LLC 2018</string>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wjh-bl-7Ge">
                                 <rect key="frame" x="148.5" y="137.5" width="370" height="100"/>
-                                <color key="backgroundColor" red="0.085174279379999995" green="0.4037200453" blue="0.070180089230000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.084830083984327884" green="0.40372004530000005" blue="0.072637657658767271" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="YkM-6K-HUM"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="370" id="qBT-j1-9Jc"/>
@@ -131,29 +131,13 @@ Brotherwise Games LLC 2018</string>
                                     <constraint firstAttribute="height" constant="175" id="vG3-gN-9tC"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ambiance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1O9-WP-1pA">
-                                <rect key="frame" x="177" y="245.5" width="96" height="26"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tZq-Qb-ZUo">
-                                <rect key="frame" x="200.5" y="279" width="52" height="31"/>
+                                <rect key="frame" x="233" y="259" width="52" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="ybB-07-rKB"/>
+                                    <constraint firstAttribute="height" constant="31" id="AO2-Vo-pDs"/>
+                                    <constraint firstAttribute="width" constant="50" id="ZTK-E9-rXT"/>
                                 </constraints>
                             </switch>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BgK-kC-hPA">
-                                <rect key="frame" x="378" y="273.5" width="90" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="9Lb-WR-dyt"/>
-                                    <constraint firstAttribute="height" constant="40" id="N1X-Qm-LqY"/>
-                                </constraints>
-                                <state key="normal" image="reset"/>
-                                <connections>
-                                    <action selector="resetGame:" destination="2q7-no-Jwk" eventType="touchUpInside" id="A9q-IN-XRu"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BossMonsterCompanionLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Tv9-h6-W0J">
                                 <rect key="frame" x="183.5" y="20" width="300" height="100"/>
                                 <constraints>
@@ -167,31 +151,48 @@ Brotherwise Games LLC 2018</string>
                                     <segue destination="ylt-1M-r7Q" kind="presentation" modalTransitionStyle="crossDissolve" id="ZJU-2j-uM8"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="256px-Speaker_Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Eak-gq-zJi">
+                                <rect key="frame" x="185" y="249" width="40" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="W1g-k8-wfj"/>
+                                    <constraint firstAttribute="height" constant="50" id="sIn-HR-R8a"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BgK-kC-hPA">
+                                <rect key="frame" x="378" y="254.5" width="90" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="9Lb-WR-dyt"/>
+                                    <constraint firstAttribute="height" constant="40" id="N1X-Qm-LqY"/>
+                                </constraints>
+                                <state key="normal" image="reset"/>
+                                <connections>
+                                    <action selector="resetGame:" destination="2q7-no-Jwk" eventType="touchUpInside" id="A9q-IN-XRu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Wjh-bl-7Ge" firstAttribute="leading" secondItem="tFD-Ji-F5R" secondAttribute="trailing" constant="30" id="41f-32-1p9"/>
                             <constraint firstItem="Tv9-h6-W0J" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="20" id="5Kf-ig-Xke"/>
-                            <constraint firstItem="tZq-Qb-ZUo" firstAttribute="top" secondItem="tFD-Ji-F5R" secondAttribute="bottom" constant="-31" id="7WJ-dH-saE"/>
                             <constraint firstItem="Wjh-bl-7Ge" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="80v-rq-uzn"/>
                             <constraint firstItem="o2V-6m-vce" firstAttribute="leading" secondItem="Wjh-bl-7Ge" secondAttribute="trailing" constant="30" id="8IT-KM-35x"/>
                             <constraint firstItem="Tv9-h6-W0J" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="AtY-IO-FWn"/>
+                            <constraint firstItem="Eak-gq-zJi" firstAttribute="top" secondItem="tFD-Ji-F5R" secondAttribute="bottom" constant="-61" id="BFv-5I-efR"/>
                             <constraint firstItem="o2V-6m-vce" firstAttribute="leading" secondItem="BgK-kC-hPA" secondAttribute="trailing" constant="80.5" id="Bp1-ag-kDB"/>
+                            <constraint firstItem="tZq-Qb-ZUo" firstAttribute="leading" secondItem="tFD-Ji-F5R" secondAttribute="trailing" constant="114.5" id="Efm-1d-wn0"/>
                             <constraint firstItem="tFD-Ji-F5R" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" constant="35" id="Fpq-pf-vDJ"/>
                             <constraint firstItem="Wjh-bl-7Ge" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="NOL-W8-RaS"/>
-                            <constraint firstItem="tZq-Qb-ZUo" firstAttribute="leading" secondItem="tFD-Ji-F5R" secondAttribute="trailing" constant="82" id="PWx-gl-jm9"/>
-                            <constraint firstItem="1O9-WP-1pA" firstAttribute="top" secondItem="tFD-Ji-F5R" secondAttribute="bottom" constant="-64.5" id="U0S-WY-zkZ"/>
                             <constraint firstItem="o2V-6m-vce" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" constant="35" id="UHf-US-oNX"/>
                             <constraint firstItem="6bM-wi-ZDE" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="98" id="XEh-0J-zGt"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="1O9-WP-1pA" secondAttribute="trailing" constant="394" id="chN-cF-5Pe"/>
-                            <constraint firstItem="BgK-kC-hPA" firstAttribute="top" secondItem="o2V-6m-vce" secondAttribute="bottom" constant="-36.5" id="cxy-iT-k0M"/>
+                            <constraint firstItem="BgK-kC-hPA" firstAttribute="top" secondItem="o2V-6m-vce" secondAttribute="bottom" constant="-55.5" id="cxy-iT-k0M"/>
                             <constraint firstItem="o2V-6m-vce" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="548.5" id="d3j-oi-iYM"/>
                             <constraint firstItem="6bM-wi-ZDE" firstAttribute="leading" secondItem="Tv9-h6-W0J" secondAttribute="trailing" constant="-5.5" id="fRa-hg-hNy"/>
-                            <constraint firstItem="1O9-WP-1pA" firstAttribute="leading" secondItem="tFD-Ji-F5R" secondAttribute="trailing" constant="58.5" id="nQ5-mI-1ak"/>
+                            <constraint firstItem="Eak-gq-zJi" firstAttribute="leading" secondItem="tFD-Ji-F5R" secondAttribute="trailing" constant="66.5" id="pkU-Pe-zEL"/>
+                            <constraint firstItem="tZq-Qb-ZUo" firstAttribute="top" secondItem="tFD-Ji-F5R" secondAttribute="bottom" constant="-51" id="ynp-z1-JN6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Main" id="acW-dT-cKf">
+                    <tabBarItem key="tabBarItem" title="Main" image="icons8-body-armor-filled-30" selectedImage="icons8-body-armor-filled-30" id="acW-dT-cKf">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <connections>
@@ -206,7 +207,7 @@ Brotherwise Games LLC 2018</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
                 <exit id="2q7-no-Jwk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="143" y="-665"/>
+            <point key="canvasLocation" x="142.57871064467767" y="-666.39999999999998"/>
         </scene>
         <!--Players-->
         <scene sceneID="wg7-f3-ORb">
@@ -680,7 +681,7 @@ Brotherwise Games LLC 2018</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Players" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Bosses" image="icons8-defense-filled-50" selectedImage="icons8-defense-filled-50" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="playerFourName" destination="SWz-tz-Kbe" id="wum-1m-fuu"/>
                         <outlet property="playerOneName" destination="IiA-Fk-e4S" id="ZpZ-OX-cjp"/>
@@ -714,11 +715,14 @@ Brotherwise Games LLC 2018</string>
         </scene>
     </scenes>
     <resources>
+        <image name="256px-Speaker_Icon.png" width="256" height="256"/>
         <image name="BossMonsterCompanionLogo" width="504" height="180"/>
         <image name="Boss_icon_portrait" width="235" height="173"/>
         <image name="Soul" width="50" height="70"/>
         <image name="Wound" width="50" height="70"/>
         <image name="boss_logo" width="589" height="197"/>
+        <image name="icons8-body-armor-filled-30" width="30" height="30"/>
+        <image name="icons8-defense-filled-50" width="50" height="50"/>
         <image name="reset" width="2476" height="976"/>
     </resources>
 </document>
