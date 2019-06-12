@@ -33,6 +33,8 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        phaseButton.layer.cornerRadius = 5
+        phaseButton.clipsToBounds = true
         
         torchFlame()
         
