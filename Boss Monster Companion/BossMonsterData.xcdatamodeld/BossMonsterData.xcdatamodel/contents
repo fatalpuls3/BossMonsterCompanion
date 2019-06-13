@@ -1,33 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18F132" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="P1Score" representedClassName="P1Score" syncable="YES" codeGenerationType="class">
-        <attribute name="souls" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="wounds" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    <entity name="PhaseButtonState" representedClassName="PhaseButtonState" syncable="YES" codeGenerationType="class">
+        <attribute name="state" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
-    <entity name="P2Score" representedClassName="P1Score" syncable="YES" codeGenerationType="class">
-        <attribute name="souls" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="wounds" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    </entity>
-    <entity name="P3Score" representedClassName="P1Score" syncable="YES" codeGenerationType="class">
-        <attribute name="souls" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="wounds" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    </entity>
-    <entity name="P4Score" representedClassName="P1Score" syncable="YES" codeGenerationType="class">
-        <attribute name="souls" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="wounds" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    </entity>
-    <entity name="Phase" representedClassName="Phase" syncable="YES" codeGenerationType="class">
-        <attribute name="phaseIndex" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-    </entity>
+    <entity name="PlayerScores" representedClassName="PlayerScores" syncable="YES" codeGenerationType="class"/>
     <elements>
-        <element name="P1Score" positionX="-63" positionY="-18" width="128" height="90"/>
-        <element name="P2Score" positionX="-54" positionY="18" width="128" height="90"/>
-        <element name="P3Score" positionX="-36" positionY="45" width="128" height="90"/>
-        <element name="P4Score" positionX="-18" positionY="63" width="128" height="90"/>
-        <element name="Phase" positionX="0" positionY="81" width="128" height="60"/>
+        <element name="PhaseButtonState" positionX="-63" positionY="-18" width="128" height="60"/>
+        <element name="PlayerScores" positionX="-54" positionY="0" width="128" height="45"/>
     </elements>
 </model>
