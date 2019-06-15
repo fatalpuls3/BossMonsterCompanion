@@ -22,10 +22,8 @@ class MainViewController: UIViewController {
     
     // Dictionary of all phase values
     let phases = ["1BeginTurn", "2BuildPhase", "3BaitPhase", "4AdventurePhase", "5EndOfTurn"]
+    // var phaseTitle = UIImage(named: "0SetUp")
     var phaseIndex = -1
-    var phaseTitle = UIImage(named: "0SetUp")
-    
-
     
     // resetting button tap value
     var buttonTapOnce = -1
@@ -33,23 +31,18 @@ class MainViewController: UIViewController {
     
     // AVAudioPlayer class instance
     var audioPlayer = AVAudioPlayer()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
             let phaseIndexValue = PhaseButtonState(context: context)
-            phaseIndexValue.state = Int16(phaseIndex)
+            phaseIndexValue.state = 0
             (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
-            print("coredata value ", phaseIndexValue.state)
         }
-        
         phaseButton.layer.cornerRadius = 5
         phaseButton.clipsToBounds = true
-        //phaseButton.setImage(UIImage(named: phases[phaseIndex]), for: UIControl.State.normal)
+        phaseButton.setImage(UIImage(named: "0SetUp"), for: UIControl.State.normal)
         torchFlame()
-    
-        // Init phase button to be Set Up image
-        // phaseButton.setImage(phaseTitle, for: UIControl.State.normal)
     
         // Setup single tap gesture recognition
         let singleTap = UITapGestureRecognizer(target: self, action: #selector(forwardPhase))
@@ -69,7 +62,6 @@ class MainViewController: UIViewController {
     
         // Reset button target
         reset.addTarget(self, action: #selector(resetGame(_:)), for: UIControl.Event.touchDown)
-        
     }
     // double back to go back phase
     @objc func backPhase() {
@@ -90,45 +82,57 @@ class MainViewController: UIViewController {
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
             let phaseIndexValue = PhaseButtonState(context: context)
             // if block for if button is tapped once
+            phaseIndexValue.state = Int32(phaseIndex)
+            (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+
             if buttonTapOnce == 1, buttonTapTwice == 0 {
                 // if block to ensure we dont go out of range and reset to index 0
-                if phaseIndexValue.state == 4 {
+                if phaseIndexValue.state == Int32(4) {
                     phaseIndex = 0
-                    phaseIndexValue.state = Int16(phaseIndex)
+                    phaseIndexValue.state = Int32(phaseIndex)
                     (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
-                    print("in if for sng tap ", phaseIndexValue.state)
                     phaseButton.setImage(UIImage(named: phases[phaseIndex]), for: UIControl.State.normal)
+                    buttonTapOnce = -1
+                    buttonTapTwice = -1
+                }  else if phaseIndexValue.state == -1 {
+                    phaseIndex = 0
+                    phaseIndexValue.state = Int32(phaseIndex)
+                    (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+                    phaseButton.setImage(UIImage(named: phases[phaseIndex]), for: UIControl.State.normal)
+                    buttonTapOnce = -1
+                    buttonTapTwice = -1
                 } else {
                     phaseIndex = phaseIndex + 1
-                    phaseIndexValue.state = Int16(phaseIndex)
+                    phaseIndexValue.state = Int32(phaseIndex)
                     (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
-                    print("in else for sng tap ",phaseIndexValue.state)
                     phaseButton.setImage(UIImage(named: phases[phaseIndex]), for: UIControl.State.normal)
+                    buttonTapOnce = -1
+                    buttonTapTwice = -1
                 }
                 // else if block for button tapped twice
             } else if buttonTapOnce == 0, buttonTapTwice == 1 {
-                print("value before dbl tap if block ",phaseIndexValue.state)
-
                 //if block to ensure we dont go out of range and reset to index 4
-                if phaseIndexValue.state == 0 {
-                    print("in the first if for dbl tap ",phaseIndexValue.state)
+                if phaseIndexValue.state == Int32(0) {
                     phaseIndex = 4
-                    phaseIndexValue.state = Int16(phaseIndex)
+                    phaseIndexValue.state = Int32(phaseIndex)
                     (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
-                    print("in the first if for dbl tap ",phaseIndexValue.state)
                     phaseButton.setImage(UIImage(named: phases[phaseIndex]), for: UIControl.State.normal)
-                } else if phaseIndexValue.state < 0 { // ensure double tap on startup does not crash app but actually goes to end of turn
+                    buttonTapOnce = -1
+                    buttonTapTwice = -1
+                } else if phaseIndexValue.state < Int32(0) { // ensure double tap on startup does not crash app but actually goes to end of turn
                     phaseIndex = 4
-                    phaseIndexValue.state = Int16(phaseIndex)
+                    phaseIndexValue.state = Int32(phaseIndex)
                     (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
-                    print("in else if for dbl tap ", phaseIndexValue.state)
                     phaseButton.setImage(UIImage(named: phases[phaseIndex]), for: UIControl.State.normal)
+                    buttonTapOnce = -1
+                    buttonTapTwice = -1
                 } else {
                     phaseIndex = phaseIndex - 1
-                    phaseIndexValue.state = Int16(phaseIndex)
+                    phaseIndexValue.state = Int32(phaseIndex)
                     (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
-                    print("in else for double tap ",phaseIndexValue.state)
                     phaseButton.setImage(UIImage(named: phases[phaseIndex]), for: UIControl.State.normal)
+                    buttonTapOnce = -1
+                    buttonTapTwice = -1
                 }
             }
         }
@@ -170,8 +174,10 @@ class MainViewController: UIViewController {
             phaseButton.setImage(UIImage(named: "0SetUp"), for: UIControl.State.normal)
             buttonTapOnce = -1
             buttonTapTwice = -1
-            phaseIndex = 0
-            phaseIndexValue.state = 0
+            phaseIndex = -1
+            phaseIndexValue.state = Int32(phaseIndex)
+            (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+
         }
     }
     
