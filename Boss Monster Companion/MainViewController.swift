@@ -20,8 +20,8 @@ class MainViewController: UIViewController {
     
     // Dictionary of all phase values
     let phases = ["1BeginTurn", "2BuildPhase", "3BaitPhase", "4AdventurePhase", "5EndOfTurn"]
-    var phaseTitle = UIImage(named: "0SetUp")
-    var phaseIndex = -1
+    var phaseIndex: Int?
+    let defaults = UserDefaults.standard
     
     // resetting button tap value
     var buttonTapOnce = -1
@@ -32,11 +32,19 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-            if phaseIndex == -1 {
-                phaseButton.setImage(UIImage(named: "0SetUp"), for: UIControl.State.normal)
-            } else {
-                phaseButton.setImage(UIImage(named: phases[phaseIndex]), for: UIControl.State.normal)
-            }
+        getGamePhase()
+        if phaseIndex == nil {
+            phaseButton.setImage(UIImage(named: "0SetUp"), for: UIControl.State.normal)
+            phaseIndex = -1
+            saveGamePhase()
+        }
+        else if phaseIndex == -1 {
+            phaseButton.setImage(UIImage(named: "0SetUp"), for: UIControl.State.normal)
+        }
+        else {
+            getGamePhase()
+            phaseButton.setImage(UIImage(named: phases[phaseIndex!]), for: UIControl.State.normal)
+        }
         
         phaseButton.layer.cornerRadius = 5
         phaseButton.clipsToBounds = true
@@ -85,38 +93,44 @@ class MainViewController: UIViewController {
                 // if block to ensure we dont go out of range and reset to index 0
                 if phaseIndex == 4 {
                     phaseIndex = 0
-                    phaseButton.setImage(UIImage(named: phases[phaseIndex]), for: UIControl.State.normal)
+                    phaseButton.setImage(UIImage(named: phases[phaseIndex!]), for: UIControl.State.normal)
                     buttonTapOnce = -1
                     buttonTapTwice = -1
+                    saveGamePhase()
                 }  else if phaseIndex == -1 {
                     phaseIndex = 0
-                    phaseButton.setImage(UIImage(named: phases[phaseIndex]), for: UIControl.State.normal)
+                    phaseButton.setImage(UIImage(named: phases[phaseIndex!]), for: UIControl.State.normal)
                     buttonTapOnce = -1
                     buttonTapTwice = -1
+                    saveGamePhase()
                 } else {
-                    phaseIndex = phaseIndex + 1
-                    phaseButton.setImage(UIImage(named: phases[phaseIndex]), for: UIControl.State.normal)
+                    phaseIndex = phaseIndex! + 1
+                    phaseButton.setImage(UIImage(named: phases[phaseIndex!]), for: UIControl.State.normal)
                     buttonTapOnce = -1
                     buttonTapTwice = -1
+                    saveGamePhase()
                 }
                 // else if block for button tapped twice
             } else if buttonTapOnce == 0, buttonTapTwice == 1 {
                 //if block to ensure we dont go out of range and reset to index 4
                 if phaseIndex == 0 {
                     phaseIndex = 4
-                    phaseButton.setImage(UIImage(named: phases[phaseIndex]), for: UIControl.State.normal)
+                    phaseButton.setImage(UIImage(named: phases[phaseIndex!]), for: UIControl.State.normal)
                     buttonTapOnce = -1
                     buttonTapTwice = -1
-                } else if phaseIndex < 0 { // ensure double tap on startup does not crash app but actually goes to end of turn
+                    saveGamePhase()
+                } else if phaseIndex! < 0 { // ensure double tap on startup does not crash app but actually goes to end of turn
                     phaseIndex = 4
-                    phaseButton.setImage(UIImage(named: phases[phaseIndex]), for: UIControl.State.normal)
+                    phaseButton.setImage(UIImage(named: phases[phaseIndex!]), for: UIControl.State.normal)
                     buttonTapOnce = -1
                     buttonTapTwice = -1
+                    saveGamePhase()
                 } else {
-                    phaseIndex = phaseIndex - 1
-                    phaseButton.setImage(UIImage(named: phases[phaseIndex]), for: UIControl.State.normal)
+                    phaseIndex = phaseIndex! - 1
+                    phaseButton.setImage(UIImage(named: phases[phaseIndex!]), for: UIControl.State.normal)
                     buttonTapOnce = -1
                     buttonTapTwice = -1
+                    saveGamePhase()
                 }
             }
         }
@@ -157,6 +171,7 @@ class MainViewController: UIViewController {
             buttonTapOnce = -1
             buttonTapTwice = -1
             phaseIndex = -1
+            saveGamePhase()
     }
     
     // Heros and Boss image rotation
@@ -176,5 +191,14 @@ class MainViewController: UIViewController {
             UIImage(named:"torch3")!,
             UIImage(named:"torch4")!]
         torchRight.startAnimating()
+    }
+    
+    func saveGamePhase(){
+        defaults.set(phaseIndex, forKey: "phaseIndex")
+    }
+    
+    func getGamePhase(){
+        let gamePhase = defaults.integer(forKey: "phaseIndex")
+        phaseIndex = gamePhase
     }
 }
