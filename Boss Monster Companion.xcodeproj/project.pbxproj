@@ -16,7 +16,6 @@
 		44295B8922A3104B0060A10E /* BossMonsterCompanion_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 44295B8822A3104B0060A10E /* BossMonsterCompanion_Icon.png */; };
 		442EC44022AC173E00E5B494 /* 256px-Speaker_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 442EC43F22AC173E00E5B494 /* 256px-Speaker_Icon.png */; };
 		4468CD7D22B5144C00C33AAF /* backround.png in Resources */ = {isa = PBXBuildFile; fileRef = 4468CD7C22B5144C00C33AAF /* backround.png */; };
-		44ACDD2C22B1C32800498A3B /* BossMonsterData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44ACDD2A22B1C32800498A3B /* BossMonsterData.xcdatamodeld */; };
 		44BE24FE22985310006718C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE24FD22985310006718C9 /* AppDelegate.swift */; };
 		44BE250022985310006718C9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE24FF22985310006718C9 /* MainViewController.swift */; };
 		44BE250222985310006718C9 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE250122985310006718C9 /* PlayersViewController.swift */; };
@@ -44,7 +43,6 @@
 		44295B8822A3104B0060A10E /* BossMonsterCompanion_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BossMonsterCompanion_Icon.png; sourceTree = "<group>"; };
 		442EC43F22AC173E00E5B494 /* 256px-Speaker_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "256px-Speaker_Icon.png"; sourceTree = "<group>"; };
 		4468CD7C22B5144C00C33AAF /* backround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backround.png; sourceTree = "<group>"; };
-		44ACDD2B22B1C32800498A3B /* BossMonsterData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BossMonsterData.xcdatamodel; sourceTree = "<group>"; };
 		44BE24FA22985310006718C9 /* Boss Monster Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Boss Monster Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44BE24FD22985310006718C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44BE24FF22985310006718C9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -115,7 +113,6 @@
 				44F4EEC622A2DDBA00650584 /* TorchFlames */,
 				44F4EEC322A2D19900650584 /* Audio */,
 				44BE24FD22985310006718C9 /* AppDelegate.swift */,
-				44ACDD2A22B1C32800498A3B /* BossMonsterData.xcdatamodeld */,
 				44F9131C22AA9BBF003AF3AD /* CopyrightInfoViewController.swift */,
 				44BE24FF22985310006718C9 /* MainViewController.swift */,
 				44BE250122985310006718C9 /* PlayersViewController.swift */,
@@ -248,7 +245,6 @@
 				44BE24FE22985310006718C9 /* AppDelegate.swift in Sources */,
 				44BE251222985397006718C9 /* RulesViewController.swift in Sources */,
 				44BE250022985310006718C9 /* MainViewController.swift in Sources */,
-				44ACDD2C22B1C32800498A3B /* BossMonsterData.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,19 +446,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		44ACDD2A22B1C32800498A3B /* BossMonsterData.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				44ACDD2B22B1C32800498A3B /* BossMonsterData.xcdatamodel */,
-			);
-			currentVersion = 44ACDD2B22B1C32800498A3B /* BossMonsterData.xcdatamodel */;
-			path = BossMonsterData.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 44BE24F222985310006718C9 /* Project object */;
 }
