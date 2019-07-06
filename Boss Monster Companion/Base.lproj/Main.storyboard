@@ -242,6 +242,9 @@ Brotherwise Games LLC 2018</string>
                                                     <constraint firstAttribute="height" constant="20" id="Mgj-O9-p6Y"/>
                                                 </constraints>
                                                 <state key="normal" title="+" image="AddPoint"/>
+                                                <connections>
+                                                    <action selector="p1WoundsAdd:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="cp3-iD-Zzg"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0HV-Jj-cGi">
                                                 <rect key="frame" x="103" y="153" width="20" height="20"/>
@@ -250,6 +253,9 @@ Brotherwise Games LLC 2018</string>
                                                     <constraint firstAttribute="height" constant="20" id="Tep-aJ-pmu"/>
                                                 </constraints>
                                                 <state key="normal" title="-" image="MinusPoint"/>
+                                                <connections>
+                                                    <action selector="p1WoundsMinus:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="tSs-TW-TRO"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcg-6U-TLY">
                                                 <rect key="frame" x="76" y="74" width="16" height="30"/>
@@ -291,6 +297,9 @@ Brotherwise Games LLC 2018</string>
                                                     <constraint firstAttribute="height" constant="20" id="Th6-Zz-0D7"/>
                                                 </constraints>
                                                 <state key="normal" title="+" image="AddPoint"/>
+                                                <connections>
+                                                    <action selector="p1SoulsAdd:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="4ll-v3-BFg"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukM-eB-HhY">
                                                 <rect key="frame" x="103" y="93" width="20" height="20"/>
@@ -299,6 +308,9 @@ Brotherwise Games LLC 2018</string>
                                                     <constraint firstAttribute="height" constant="20" id="7Xr-DC-khO"/>
                                                 </constraints>
                                                 <state key="normal" title="-" image="MinusPoint"/>
+                                                <connections>
+                                                    <action selector="p1SoulsMinus:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="rOr-PZ-xB7"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -345,6 +357,9 @@ Brotherwise Games LLC 2018</string>
                                                     <constraint firstAttribute="height" constant="20" id="dKF-e3-J6K"/>
                                                 </constraints>
                                                 <state key="normal" title="+" image="AddPoint"/>
+                                                <connections>
+                                                    <action selector="p2WoundsAdd:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="HvT-N9-iEP"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iju-Kc-GY7">
                                                 <rect key="frame" x="103" y="153" width="20" height="20"/>
@@ -353,6 +368,9 @@ Brotherwise Games LLC 2018</string>
                                                     <constraint firstAttribute="width" constant="20" id="vxh-Er-902"/>
                                                 </constraints>
                                                 <state key="normal" title="-" image="MinusPoint"/>
+                                                <connections>
+                                                    <action selector="p2WoundsMinus:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="PQv-kq-fyK"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flF-6x-7oX">
                                                 <rect key="frame" x="76" y="74" width="16" height="30"/>
@@ -394,6 +412,9 @@ Brotherwise Games LLC 2018</string>
                                                     <constraint firstAttribute="height" constant="20" id="Fad-3S-JEi"/>
                                                 </constraints>
                                                 <state key="normal" title="+" image="AddPoint"/>
+                                                <connections>
+                                                    <action selector="p2SoulsAdd:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="LRD-1s-19W"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKR-QV-2sh">
                                                 <rect key="frame" x="103" y="93" width="20" height="20"/>
@@ -402,6 +423,9 @@ Brotherwise Games LLC 2018</string>
                                                     <constraint firstAttribute="height" constant="20" id="yke-94-xbi"/>
                                                 </constraints>
                                                 <state key="normal" title="-" image="MinusPoint"/>
+                                                <connections>
+                                                    <action selector="p2SoulsMinus:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="aQJ-sl-5nf"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -448,6 +472,9 @@ Brotherwise Games LLC 2018</string>
                                                     <constraint firstAttribute="width" constant="20" id="Puu-5F-0K8"/>
                                                 </constraints>
                                                 <state key="normal" title="+" image="AddPoint"/>
+                                                <connections>
+                                                    <action selector="p3WoundsAdd:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="e4r-N3-h9d"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bG-w7-PK2">
                                                 <rect key="frame" x="103" y="153" width="20" height="20"/>
@@ -456,6 +483,9 @@ Brotherwise Games LLC 2018</string>
                                                     <constraint firstAttribute="height" constant="20" id="zJ3-gR-5eW"/>
                                                 </constraints>
                                                 <state key="normal" title="-" image="MinusPoint"/>
+                                                <connections>
+                                                    <action selector="p3WoundsMinus:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="HlQ-En-YgR"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSS-pF-8un">
                                                 <rect key="frame" x="76" y="74" width="16" height="30"/>
@@ -497,6 +527,9 @@ Brotherwise Games LLC 2018</string>
                                                     <constraint firstAttribute="height" constant="20" id="EK7-Vv-RsB"/>
                                                 </constraints>
                                                 <state key="normal" title="+" image="AddPoint"/>
+                                                <connections>
+                                                    <action selector="p3SoulsAdd:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="sqB-AQ-EJO"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2SV-hO-OI7">
                                                 <rect key="frame" x="103" y="93" width="20" height="20"/>
@@ -505,6 +538,9 @@ Brotherwise Games LLC 2018</string>
                                                     <constraint firstAttribute="height" constant="20" id="bfJ-OC-12E"/>
                                                 </constraints>
                                                 <state key="normal" title="-" image="MinusPoint"/>
+                                                <connections>
+                                                    <action selector="p3SoulsMinus:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="0GM-CJ-2yZ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -551,6 +587,9 @@ Brotherwise Games LLC 2018</string>
                                                     <constraint firstAttribute="width" constant="20" id="MkD-bX-yID"/>
                                                 </constraints>
                                                 <state key="normal" title="+" image="AddPoint"/>
+                                                <connections>
+                                                    <action selector="p4WoundsAdd:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="ShE-UI-bGX"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeO-YO-tjC">
                                                 <rect key="frame" x="103" y="153" width="20" height="20"/>
@@ -559,6 +598,9 @@ Brotherwise Games LLC 2018</string>
                                                     <constraint firstAttribute="height" constant="20" id="Q9d-Hf-TWt"/>
                                                 </constraints>
                                                 <state key="normal" title="-" image="MinusPoint"/>
+                                                <connections>
+                                                    <action selector="p4WoundsMinus:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="A42-8m-luy"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3W-vF-mdY">
                                                 <rect key="frame" x="76" y="74" width="16" height="30"/>
@@ -600,6 +642,9 @@ Brotherwise Games LLC 2018</string>
                                                     <constraint firstAttribute="height" constant="20" id="sZ6-Th-qGs"/>
                                                 </constraints>
                                                 <state key="normal" title="+" image="AddPoint"/>
+                                                <connections>
+                                                    <action selector="p4SoulsAdd:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="lFD-eP-osd"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPk-4h-Ahv">
                                                 <rect key="frame" x="103" y="93" width="20" height="20"/>
@@ -608,6 +653,9 @@ Brotherwise Games LLC 2018</string>
                                                     <constraint firstAttribute="width" constant="20" id="t6y-Zn-VEA"/>
                                                 </constraints>
                                                 <state key="normal" title="-" image="MinusPoint"/>
+                                                <connections>
+                                                    <action selector="p4SoulsMinus:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="biC-TU-0Pd"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -667,10 +715,18 @@ Brotherwise Games LLC 2018</string>
                     </view>
                     <tabBarItem key="tabBarItem" title="Bosses" image="icons8-defense-filled-50" selectedImage="icons8-defense-filled-50" id="cPa-gy-q4n"/>
                     <connections>
-                        <outlet property="playerFourName" destination="SWz-tz-Kbe" id="wum-1m-fuu"/>
-                        <outlet property="playerOneName" destination="IiA-Fk-e4S" id="ZpZ-OX-cjp"/>
-                        <outlet property="playerThreeName" destination="y0a-xd-Sab" id="1ow-9V-qkN"/>
-                        <outlet property="playerTwoName" destination="R5y-d7-mWD" id="WPB-LF-Ddf"/>
+                        <outlet property="p1NameField" destination="IiA-Fk-e4S" id="CVo-yo-Ljz"/>
+                        <outlet property="p1SoulsValue" destination="Qcg-6U-TLY" id="lJT-I9-23A"/>
+                        <outlet property="p1WoundsValue" destination="QEQ-zp-4L7" id="oLz-Ny-Em0"/>
+                        <outlet property="p2NameField" destination="R5y-d7-mWD" id="a2w-3Q-grz"/>
+                        <outlet property="p2SoulsValue" destination="flF-6x-7oX" id="Oiz-dH-rNl"/>
+                        <outlet property="p2WoundsValue" destination="CXe-Jh-GJK" id="ZLE-Ek-WaP"/>
+                        <outlet property="p3NameField" destination="y0a-xd-Sab" id="MEK-OD-Eai"/>
+                        <outlet property="p3SoulsValue" destination="kSS-pF-8un" id="vHO-mV-5gQ"/>
+                        <outlet property="p3WoundsValue" destination="vUj-C7-Gbz" id="xaU-i2-w63"/>
+                        <outlet property="p4NameField" destination="SWz-tz-Kbe" id="L72-fx-Pwl"/>
+                        <outlet property="p4SoulsValue" destination="D3W-vF-mdY" id="gM2-NP-PLL"/>
+                        <outlet property="p4WoundsValue" destination="jkF-L2-kq4" id="bzq-9q-iMO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>

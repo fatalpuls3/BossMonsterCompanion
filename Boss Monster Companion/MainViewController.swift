@@ -21,6 +21,7 @@ class MainViewController: UIViewController {
     // Dictionary of all phase values
     let phases = ["1BeginTurn", "2BuildPhase", "3BaitPhase", "4AdventurePhase", "5EndOfTurn"]
     var phaseIndex: Int?
+    //var isFirstRun = 0
     let defaults = UserDefaults.standard
     
     // resetting button tap value
@@ -40,6 +41,7 @@ class MainViewController: UIViewController {
         }
         else if phaseIndex == -1 {
             phaseButton.setImage(UIImage(named: "0SetUp"), for: UIControl.State.normal)
+            saveGamePhase()
         }
         else {
             getGamePhase()
