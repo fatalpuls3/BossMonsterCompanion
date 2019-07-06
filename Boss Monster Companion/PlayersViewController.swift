@@ -10,8 +10,11 @@ import UIKit
 
 class PlayersViewController: UIViewController {
     
+    @IBAction func playerReset(_ sender: Any) {
+        resetPlayers()
+    }
     let defaults = UserDefaults.standard
-
+    
     @IBAction func p1NameSaveTriger(_ sender: Any) {
         p1NameField.resignFirstResponder()
         let tmpP1Name = p1NameField.text
@@ -181,38 +184,7 @@ class PlayersViewController: UIViewController {
             getPlayer4Status()
         }
     }
-    
-    func resetPlayers() {
 
-        p1NameField.text = ""
-        defaults.set(p1NameField.text, forKey: "p1Name")
-        defaults.set(0, forKey: "p1Souls")
-        p1SoulsValue.text = String(0)
-        defaults.set(0, forKey: "p1Wounds")
-        p1WoundsValue.text = String(0)
-        
-        p2NameField.text = ""
-        defaults.set(p2NameField.text, forKey: "p2Name")
-        defaults.set(0, forKey: "p2Souls")
-        p2SoulsValue.text = String(0)
-        defaults.set(0, forKey: "p2Wounds")
-        p2WoundsValue.text = String(0)
-        
-        p3NameField.text = ""
-        defaults.set(p3NameField.text, forKey: "p3Name")
-        defaults.set(0, forKey: "p3Souls")
-        p3SoulsValue.text = String(0)
-        defaults.set(0, forKey: "p3Wounds")
-        p3WoundsValue.text = String(0)
-        
-        p4NameField.text = ""
-        defaults.set(p4NameField.text, forKey: "p4Name")
-        defaults.set(0, forKey: "p4Souls")
-        p4SoulsValue.text = String(0)
-        defaults.set(0, forKey: "p4Wounds")
-        p4WoundsValue.text = String(0)
-
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -346,6 +318,39 @@ class PlayersViewController: UIViewController {
             p4Status.image = UIImage(named: "alive.png")
         }
     }
+    @IBAction func resetPlayers() {
+            
+        p1NameField.text = ""
+        defaults.set(p1NameField.text, forKey: "p1Name")
+        defaults.set(0, forKey: "p1Souls")
+        p1SoulsValue.text = String(0)
+        defaults.set(0, forKey: "p1Wounds")
+        p1WoundsValue.text = String(0)
+        getPlayer1Status()
+        
+        p2NameField.text = ""
+        defaults.set(p2NameField.text, forKey: "p2Name")
+        defaults.set(0, forKey: "p2Souls")
+        p2SoulsValue.text = String(0)
+        defaults.set(0, forKey: "p2Wounds")
+        p2WoundsValue.text = String(0)
+        getPlayer2Status()
 
-}
+        p3NameField.text = ""
+        defaults.set(p3NameField.text, forKey: "p3Name")
+        defaults.set(0, forKey: "p3Souls")
+        p3SoulsValue.text = String(0)
+        defaults.set(0, forKey: "p3Wounds")
+        p3WoundsValue.text = String(0)
+        getPlayer3Status()
 
+        p4NameField.text = ""
+        defaults.set(p4NameField.text, forKey: "p4Name")
+        defaults.set(0, forKey: "p4Souls")
+        p4SoulsValue.text = String(0)
+        defaults.set(0, forKey: "p4Wounds")
+        p4WoundsValue.text = String(0)
+        getPlayer4Status()
+
+        }
+    }

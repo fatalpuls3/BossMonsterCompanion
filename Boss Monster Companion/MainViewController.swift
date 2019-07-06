@@ -169,13 +169,11 @@ class MainViewController: UIViewController {
     // Game reset button tapped actions
     func resetTapped() {
         // Resetting button taps and phaseIndex to start fresh on next phaseButton tap
-        //let PlayerView = PlayersViewController()
         phaseButton.setImage(UIImage(named: "0SetUp"), for: UIControl.State.normal)
         buttonTapOnce = -1
         buttonTapTwice = -1
         phaseIndex = -1
         saveGamePhase()
-        //PlayerView.resetPlayers()
     }
     
     // Heros and Boss image rotation

@@ -22,7 +22,7 @@
                                 <rect key="frame" x="193.5" y="92.5" width="280" height="190"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boss_logo" translatesAutoresizingMaskIntoConstraints="NO" id="RFP-Xj-meL" customClass="Copy">
-                                        <rect key="frame" x="8" y="8" width="264" height="54"/>
+                                        <rect key="frame" x="8" y="8" width="264" height="54.000000000000057"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="54" id="Ogb-UN-sMH"/>
                                             <constraint firstAttribute="width" constant="264" id="T4W-wv-vYm"/>
@@ -260,14 +260,14 @@ Brotherwise Games LLC 2018</string>
                                                     <action selector="p1WoundsMinus:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="tSs-TW-TRO"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcg-6U-TLY">
-                                                <rect key="frame" x="71" y="74" width="16" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcg-6U-TLY">
+                                                <rect key="frame" x="71" y="74" width="29" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEQ-zp-4L7">
-                                                <rect key="frame" x="71" y="134" width="16" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEQ-zp-4L7">
+                                                <rect key="frame" x="71" y="134" width="29" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -334,11 +334,13 @@ Brotherwise Games LLC 2018</string>
                                             <constraint firstItem="1uT-n4-gAN" firstAttribute="leading" secondItem="NqF-fE-0WF" secondAttribute="leading" constant="21" id="hC8-15-H5o"/>
                                             <constraint firstAttribute="width" constant="145" id="hYH-Yl-5av"/>
                                             <constraint firstItem="IiA-Fk-e4S" firstAttribute="centerX" secondItem="NqF-fE-0WF" secondAttribute="centerX" id="hml-lB-VL6"/>
+                                            <constraint firstAttribute="trailing" secondItem="QEQ-zp-4L7" secondAttribute="trailing" constant="45" id="jXa-3N-tuf"/>
                                             <constraint firstItem="IiA-Fk-e4S" firstAttribute="top" secondItem="NqF-fE-0WF" secondAttribute="top" constant="10" id="jnM-mD-hr9"/>
                                             <constraint firstItem="s16-7m-q7Z" firstAttribute="leading" secondItem="1uT-n4-gAN" secondAttribute="trailing" constant="42" id="nFG-na-9kn"/>
                                             <constraint firstItem="Qcg-6U-TLY" firstAttribute="leading" secondItem="1uT-n4-gAN" secondAttribute="trailing" constant="10" id="qJ8-QZ-AUd"/>
                                             <constraint firstItem="0HV-Jj-cGi" firstAttribute="leading" secondItem="u6M-4e-Obw" secondAttribute="trailing" constant="42" id="qb5-pM-jJo"/>
                                             <constraint firstItem="QEQ-zp-4L7" firstAttribute="leading" secondItem="u6M-4e-Obw" secondAttribute="trailing" constant="10" id="ujJ-Ko-TEe"/>
+                                            <constraint firstAttribute="trailing" secondItem="Qcg-6U-TLY" secondAttribute="trailing" constant="45" id="vis-nF-yX5"/>
                                             <constraint firstItem="ukM-eB-HhY" firstAttribute="leading" secondItem="1uT-n4-gAN" secondAttribute="trailing" constant="42" id="y5E-Wa-X8r"/>
                                             <constraint firstItem="0HV-Jj-cGi" firstAttribute="top" secondItem="Wt7-Dn-78e" secondAttribute="bottom" constant="8" id="yev-9D-dBQ"/>
                                             <constraint firstItem="0Ki-ue-Mt6" firstAttribute="centerX" secondItem="NqF-fE-0WF" secondAttribute="centerX" id="yy5-a6-eNk"/>
@@ -378,14 +380,14 @@ Brotherwise Games LLC 2018</string>
                                                     <action selector="p2WoundsMinus:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="PQv-kq-fyK"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flF-6x-7oX">
-                                                <rect key="frame" x="71" y="74" width="16" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flF-6x-7oX">
+                                                <rect key="frame" x="71" y="74" width="29" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXe-Jh-GJK">
-                                                <rect key="frame" x="71" y="134" width="16" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXe-Jh-GJK">
+                                                <rect key="frame" x="71" y="134" width="29" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -437,8 +439,10 @@ Brotherwise Games LLC 2018</string>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="GN0-5u-cuz" firstAttribute="top" secondItem="R5y-d7-mWD" secondAttribute="bottom" constant="19" id="5P1-UR-zM0"/>
+                                            <constraint firstAttribute="trailing" secondItem="flF-6x-7oX" secondAttribute="trailing" constant="45" id="6ci-Vc-C5s"/>
                                             <constraint firstAttribute="height" constant="240" id="7De-VV-PIv"/>
                                             <constraint firstItem="flF-6x-7oX" firstAttribute="leading" secondItem="GN0-5u-cuz" secondAttribute="trailing" constant="10" id="AVf-BU-TL5"/>
+                                            <constraint firstAttribute="trailing" secondItem="CXe-Jh-GJK" secondAttribute="trailing" constant="45" id="Ag7-0e-wBW"/>
                                             <constraint firstItem="GN0-5u-cuz" firstAttribute="leading" secondItem="tnl-Si-fUp" secondAttribute="leading" constant="21" id="Cbu-is-SVx"/>
                                             <constraint firstItem="rtl-2A-5PU" firstAttribute="centerX" secondItem="tnl-Si-fUp" secondAttribute="centerX" id="Dbo-ty-Nm7"/>
                                             <constraint firstItem="R5y-d7-mWD" firstAttribute="centerX" secondItem="tnl-Si-fUp" secondAttribute="centerX" id="G5C-c6-AoF"/>
@@ -496,14 +500,14 @@ Brotherwise Games LLC 2018</string>
                                                     <action selector="p3WoundsMinus:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="HlQ-En-YgR"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSS-pF-8un">
-                                                <rect key="frame" x="71" y="74" width="16" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSS-pF-8un">
+                                                <rect key="frame" x="71" y="74" width="29" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUj-C7-Gbz">
-                                                <rect key="frame" x="71" y="134" width="16" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUj-C7-Gbz">
+                                                <rect key="frame" x="71" y="134" width="29" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -555,6 +559,7 @@ Brotherwise Games LLC 2018</string>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="V0M-XJ-Gza" firstAttribute="top" secondItem="2SV-hO-OI7" secondAttribute="bottom" constant="12.000000000000014" id="0rK-20-Hep"/>
+                                            <constraint firstAttribute="trailing" secondItem="kSS-pF-8un" secondAttribute="trailing" constant="45" id="1N3-LC-hUS"/>
                                             <constraint firstItem="8bG-w7-PK2" firstAttribute="top" secondItem="V0M-XJ-Gza" secondAttribute="bottom" constant="8" id="2EV-gV-2nY"/>
                                             <constraint firstItem="uQa-1B-Kg0" firstAttribute="top" secondItem="y0a-xd-Sab" secondAttribute="bottom" constant="19" id="5XO-rz-5rE"/>
                                             <constraint firstItem="8bG-w7-PK2" firstAttribute="leading" secondItem="hwy-W4-Sax" secondAttribute="trailing" constant="42" id="E9e-E6-kYf"/>
@@ -564,6 +569,7 @@ Brotherwise Games LLC 2018</string>
                                             <constraint firstAttribute="width" constant="145" id="O8l-GC-K5C"/>
                                             <constraint firstItem="rCH-rM-j1D" firstAttribute="top" secondItem="hwy-W4-Sax" secondAttribute="bottom" constant="2" id="QOZ-6Y-Qo7"/>
                                             <constraint firstItem="vUj-C7-Gbz" firstAttribute="top" secondItem="kSS-pF-8un" secondAttribute="bottom" constant="30.000000000000014" id="QbW-BU-sm6"/>
+                                            <constraint firstAttribute="trailing" secondItem="vUj-C7-Gbz" secondAttribute="trailing" constant="45" id="UqR-tK-7Xo"/>
                                             <constraint firstItem="QvT-E2-MZ6" firstAttribute="leading" secondItem="uQa-1B-Kg0" secondAttribute="trailing" constant="42" id="VYq-sr-yUB"/>
                                             <constraint firstItem="kSS-pF-8un" firstAttribute="top" secondItem="y0a-xd-Sab" secondAttribute="bottom" constant="34" id="Vqv-wn-shy"/>
                                             <constraint firstItem="kSS-pF-8un" firstAttribute="leading" secondItem="uQa-1B-Kg0" secondAttribute="trailing" constant="10" id="btP-s6-txW"/>
@@ -614,14 +620,14 @@ Brotherwise Games LLC 2018</string>
                                                     <action selector="p4WoundsMinus:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="A42-8m-luy"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3W-vF-mdY">
-                                                <rect key="frame" x="71" y="74" width="16" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3W-vF-mdY">
+                                                <rect key="frame" x="71" y="74" width="29" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkF-L2-kq4">
-                                                <rect key="frame" x="71" y="134" width="16" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkF-L2-kq4">
+                                                <rect key="frame" x="71" y="134" width="29" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -683,6 +689,7 @@ Brotherwise Games LLC 2018</string>
                                             <constraint firstItem="cl2-MG-PlI" firstAttribute="leading" secondItem="gVt-MT-lus" secondAttribute="trailing" constant="42" id="972-Ie-1gx"/>
                                             <constraint firstItem="YeO-YO-tjC" firstAttribute="leading" secondItem="gVt-MT-lus" secondAttribute="trailing" constant="42" id="H2H-ib-RAg"/>
                                             <constraint firstItem="gVt-MT-lus" firstAttribute="leading" secondItem="83u-Qf-WMw" secondAttribute="leading" constant="21" id="Iq9-rA-8Nj"/>
+                                            <constraint firstAttribute="trailing" secondItem="D3W-vF-mdY" secondAttribute="trailing" constant="45" id="KoU-JX-wiA"/>
                                             <constraint firstAttribute="height" constant="240" id="OqH-m8-gLQ"/>
                                             <constraint firstItem="bfm-mn-6d2" firstAttribute="leading" secondItem="83u-Qf-WMw" secondAttribute="leading" constant="21" id="VnH-sh-ULp"/>
                                             <constraint firstAttribute="width" constant="145" id="XXN-BT-PMW"/>
@@ -690,6 +697,7 @@ Brotherwise Games LLC 2018</string>
                                             <constraint firstItem="D3W-vF-mdY" firstAttribute="leading" secondItem="bfm-mn-6d2" secondAttribute="trailing" constant="10" id="adI-j0-9kO"/>
                                             <constraint firstItem="jkF-L2-kq4" firstAttribute="leading" secondItem="gVt-MT-lus" secondAttribute="trailing" constant="10" id="bSQ-s6-PbM"/>
                                             <constraint firstItem="RSR-0d-Ipq" firstAttribute="leading" secondItem="bfm-mn-6d2" secondAttribute="trailing" constant="42" id="c3j-uh-Hu3"/>
+                                            <constraint firstAttribute="trailing" secondItem="jkF-L2-kq4" secondAttribute="trailing" constant="45" id="fg3-dZ-VfC"/>
                                             <constraint firstItem="dPk-4h-Ahv" firstAttribute="leading" secondItem="bfm-mn-6d2" secondAttribute="trailing" constant="42" id="kbh-lp-kf5"/>
                                             <constraint firstItem="SWz-tz-Kbe" firstAttribute="centerX" secondItem="83u-Qf-WMw" secondAttribute="centerX" id="pir-x8-jyl"/>
                                             <constraint firstItem="Ho1-Ks-UJJ" firstAttribute="centerX" secondItem="83u-Qf-WMw" secondAttribute="centerX" id="plU-iH-auq"/>
@@ -698,16 +706,28 @@ Brotherwise Games LLC 2018</string>
                                             <constraint firstItem="YeO-YO-tjC" firstAttribute="top" secondItem="cl2-MG-PlI" secondAttribute="bottom" constant="8" id="ySl-r6-HdZ"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMM-lv-X8p">
+                                        <rect key="frame" x="580" y="220" width="30" height="30"/>
+                                        <state key="normal" image="scoreReset"/>
+                                        <connections>
+                                            <action selector="playerReset:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="z6w-A0-Ro9"/>
+                                            <action selector="resetGame:" destination="2q7-no-Jwk" eventType="touchUpInside" id="GHZ-T3-9Bq"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="NqF-fE-0WF" firstAttribute="top" secondItem="H1b-tx-VY1" secondAttribute="top" constant="5" id="1ZC-Kb-PfJ"/>
+                                    <constraint firstItem="VMM-lv-X8p" firstAttribute="top" secondItem="H1b-tx-VY1" secondAttribute="top" constant="220" id="2Bz-Ox-m1P"/>
                                     <constraint firstItem="83u-Qf-WMw" firstAttribute="leading" secondItem="7YT-Mm-r8a" secondAttribute="trailing" constant="5" id="8Cd-RX-zJF"/>
                                     <constraint firstItem="83u-Qf-WMw" firstAttribute="top" secondItem="H1b-tx-VY1" secondAttribute="top" constant="5" id="C4a-1G-UfO"/>
                                     <constraint firstItem="tnl-Si-fUp" firstAttribute="top" secondItem="H1b-tx-VY1" secondAttribute="top" constant="5" id="Gbg-f8-78f"/>
                                     <constraint firstAttribute="trailing" secondItem="83u-Qf-WMw" secondAttribute="trailing" constant="5" id="KgV-NO-knn"/>
                                     <constraint firstItem="7YT-Mm-r8a" firstAttribute="top" secondItem="H1b-tx-VY1" secondAttribute="top" constant="5" id="L9I-Is-0ck"/>
                                     <constraint firstAttribute="height" constant="250" id="Nh2-8q-R5d"/>
+                                    <constraint firstAttribute="trailing" secondItem="VMM-lv-X8p" secondAttribute="trailing" id="TNw-fY-OuW"/>
+                                    <constraint firstItem="VMM-lv-X8p" firstAttribute="leading" secondItem="H1b-tx-VY1" secondAttribute="leading" constant="580" id="Wuy-RR-woc"/>
+                                    <constraint firstAttribute="bottom" secondItem="VMM-lv-X8p" secondAttribute="bottom" id="awF-c5-JET"/>
                                     <constraint firstItem="7YT-Mm-r8a" firstAttribute="leading" secondItem="tnl-Si-fUp" secondAttribute="trailing" constant="10" id="hnm-KV-non"/>
                                     <constraint firstItem="tnl-Si-fUp" firstAttribute="leading" secondItem="NqF-fE-0WF" secondAttribute="trailing" constant="5" id="sPY-CO-ySD"/>
                                     <constraint firstItem="NqF-fE-0WF" firstAttribute="leading" secondItem="H1b-tx-VY1" secondAttribute="leading" constant="5" id="sfj-nd-lQq"/>
@@ -747,7 +767,7 @@ Brotherwise Games LLC 2018</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="143" y="98"/>
+            <point key="canvasLocation" x="142.57871064467767" y="96.799999999999997"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -782,5 +802,6 @@ Brotherwise Games LLC 2018</string>
         <image name="icons8-body-armor-filled-30" width="30" height="30"/>
         <image name="icons8-defense-filled-50" width="50" height="50"/>
         <image name="reset" width="2476" height="976"/>
+        <image name="scoreReset" width="150" height="130"/>
     </resources>
 </document>
