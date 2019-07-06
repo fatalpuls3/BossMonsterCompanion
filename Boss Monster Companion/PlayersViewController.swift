@@ -20,11 +20,13 @@ class PlayersViewController: UIViewController {
     @IBOutlet weak var p1NameField: UITextField!
     @IBOutlet weak var p1SoulsValue: UILabel!
     @IBOutlet weak var p1WoundsValue: UILabel!
+    @IBOutlet weak var p1Status: UIImageView!
     @IBAction func p1SoulsAdd(_ sender: Any) {
         let tmpP1Souls = defaults.integer(forKey: "p1Souls")
         defaults.set((tmpP1Souls + 1), forKey: "p1Souls")
         p1SoulsValue.text = String(defaults.integer(forKey: "p1Souls"))
         savePlayer1()
+        getPlayer1Status()
     }
     @IBAction func p1SoulsMinus(_ sender: Any) {
         let tmpP1Souls = defaults.integer(forKey: "p1Souls")
@@ -32,6 +34,7 @@ class PlayersViewController: UIViewController {
             defaults.set((tmpP1Souls - 1), forKey: "p1Souls")
             p1SoulsValue.text = String(defaults.integer(forKey: "p1Souls"))
             savePlayer1()
+            getPlayer1Status()
         }
     }
     @IBAction func p1WoundsAdd(_ sender: Any) {
@@ -39,6 +42,7 @@ class PlayersViewController: UIViewController {
         defaults.set((tmpP1Wounds + 1), forKey: "p1Wounds")
         p1WoundsValue.text = String(defaults.integer(forKey: "p1Wounds"))
         savePlayer1()
+        getPlayer1Status()
     }
     @IBAction func p1WoundsMinus(_ sender: Any) {
         let tmpP1Wounds = defaults.integer(forKey: "p1Wounds")
@@ -46,6 +50,7 @@ class PlayersViewController: UIViewController {
             defaults.set((tmpP1Wounds - 1), forKey: "p1Wounds")
             p1WoundsValue.text = String(defaults.integer(forKey: "p1Wounds"))
             savePlayer1()
+            getPlayer1Status()
         }
     }
     
@@ -57,11 +62,13 @@ class PlayersViewController: UIViewController {
     @IBOutlet weak var p2NameField: UITextField!
     @IBOutlet weak var p2SoulsValue: UILabel!
     @IBOutlet weak var p2WoundsValue: UILabel!
+    @IBOutlet weak var p2Status: UIImageView!
     @IBAction func p2SoulsAdd(_ sender: Any) {
         let tmpP2Souls = defaults.integer(forKey: "p2Souls")
         defaults.set((tmpP2Souls + 1), forKey: "p2Souls")
         p2SoulsValue.text = String(defaults.integer(forKey: "p2Souls"))
         savePlayer2()
+        getPlayer2Status()
     }
     @IBAction func p2SoulsMinus(_ sender: Any) {
         let tmpP2Souls = defaults.integer(forKey: "p2Souls")
@@ -69,6 +76,7 @@ class PlayersViewController: UIViewController {
             defaults.set((tmpP2Souls - 1), forKey: "p2Souls")
             p2SoulsValue.text = String(defaults.integer(forKey: "p2Souls"))
             savePlayer2()
+            getPlayer2Status()
         }
     }
     @IBAction func p2WoundsAdd(_ sender: Any) {
@@ -76,6 +84,7 @@ class PlayersViewController: UIViewController {
         defaults.set((tmpP2Wounds + 1), forKey: "p2Wounds")
         p2WoundsValue.text = String(defaults.integer(forKey: "p2Wounds"))
         savePlayer2()
+        getPlayer2Status()
     }
     @IBAction func p2WoundsMinus(_ sender: Any) {
         let tmpP2Wounds = defaults.integer(forKey: "p2Wounds")
@@ -83,6 +92,7 @@ class PlayersViewController: UIViewController {
             defaults.set((tmpP2Wounds - 1), forKey: "p2Wounds")
             p2WoundsValue.text = String(defaults.integer(forKey: "p2Wounds"))
             savePlayer2()
+            getPlayer2Status()
         }
     }
     
@@ -94,11 +104,13 @@ class PlayersViewController: UIViewController {
     @IBOutlet weak var p3NameField: UITextField!
     @IBOutlet weak var p3SoulsValue: UILabel!
     @IBOutlet weak var p3WoundsValue: UILabel!
+    @IBOutlet weak var p3Status: UIImageView!
     @IBAction func p3SoulsAdd(_ sender: Any) {
         let tmpP3Souls = defaults.integer(forKey: "p3Souls")
         defaults.set((tmpP3Souls + 1), forKey: "p3Souls")
         p3SoulsValue.text = String(defaults.integer(forKey: "p3Souls"))
         savePlayer3()
+        getPlayer3Status()
     }
     @IBAction func p3SoulsMinus(_ sender: Any) {
         let tmpP3Souls = defaults.integer(forKey: "p3Souls")
@@ -106,6 +118,7 @@ class PlayersViewController: UIViewController {
             defaults.set((tmpP3Souls - 1), forKey: "p3Souls")
             p3SoulsValue.text = String(defaults.integer(forKey: "p3Souls"))
             savePlayer3()
+            getPlayer3Status()
         }
     }
     @IBAction func p3WoundsAdd(_ sender: Any) {
@@ -113,6 +126,7 @@ class PlayersViewController: UIViewController {
         defaults.set((tmpP3Wounds + 1), forKey: "p3Wounds")
         p3WoundsValue.text = String(defaults.integer(forKey: "p3Wounds"))
         savePlayer3()
+        getPlayer3Status()
     }
     @IBAction func p3WoundsMinus(_ sender: Any) {
         let tmpP3Wounds = defaults.integer(forKey: "p3Wounds")
@@ -120,6 +134,7 @@ class PlayersViewController: UIViewController {
             defaults.set((tmpP3Wounds - 1), forKey: "p3Wounds")
             p3WoundsValue.text = String(defaults.integer(forKey: "p3Wounds"))
             savePlayer3()
+            getPlayer3Status()
         }
     }
     
@@ -132,11 +147,13 @@ class PlayersViewController: UIViewController {
     @IBOutlet weak var p4NameField: UITextField!
     @IBOutlet weak var p4SoulsValue: UILabel!
     @IBOutlet weak var p4WoundsValue: UILabel!
+    @IBOutlet weak var p4Status: UIImageView!
     @IBAction func p4SoulsAdd(_ sender: Any) {
         let tmpP4Souls = defaults.integer(forKey: "p4Souls")
         defaults.set((tmpP4Souls + 1), forKey: "p4Souls")
         p4SoulsValue.text = String(defaults.integer(forKey: "p4Souls"))
         savePlayer4()
+        getPlayer4Status()
     }
     @IBAction func p4SoulsMinus(_ sender: Any) {
         let tmpP4Souls = defaults.integer(forKey: "p4Souls")
@@ -144,6 +161,7 @@ class PlayersViewController: UIViewController {
             defaults.set((tmpP4Souls - 1), forKey: "p4Souls")
             p4SoulsValue.text = String(defaults.integer(forKey: "p4Souls"))
             savePlayer4()
+            getPlayer4Status()
         }
 
     }
@@ -152,6 +170,7 @@ class PlayersViewController: UIViewController {
         defaults.set((tmpP4Wounds + 1), forKey: "p4Wounds")
         p4WoundsValue.text = String(defaults.integer(forKey: "p4Wounds"))
         savePlayer4()
+        getPlayer4Status()
     }
     @IBAction func p4WoundsMinus(_ sender: Any) {
         let tmpP4Wounds = defaults.integer(forKey: "p4Wounds")
@@ -159,6 +178,7 @@ class PlayersViewController: UIViewController {
             defaults.set((tmpP4Wounds - 1), forKey: "p4Wounds")
             p4WoundsValue.text = String(defaults.integer(forKey: "p4Wounds"))
             savePlayer4()
+            getPlayer4Status()
         }
     }
     
@@ -268,21 +288,63 @@ class PlayersViewController: UIViewController {
         p1NameField.text = defaults.string(forKey: "p1Name")
         p1SoulsValue.text = String(defaults.integer(forKey: "p1Souls"))
         p1WoundsValue.text = String(defaults.integer(forKey: "p1Wounds"))
+        getPlayer1Status()
     }
     func getPlayer2() {
         p2NameField.text = defaults.string(forKey: "p2Name")
         p2SoulsValue.text = String(defaults.integer(forKey: "p2Souls"))
         p2WoundsValue.text = String(defaults.integer(forKey: "p2Wounds"))
+        getPlayer2Status()
     }
     func getPlayer3() {
         p3NameField.text = defaults.string(forKey: "p3Name")
         p3SoulsValue.text = String(defaults.integer(forKey: "p3Souls"))
         p3WoundsValue.text = String(defaults.integer(forKey: "p3Wounds"))
+        getPlayer3Status()
     }
     func getPlayer4() {
         p4NameField.text = defaults.string(forKey: "p4Name")
         p4SoulsValue.text = String(defaults.integer(forKey: "p4Souls"))
         p4WoundsValue.text = String(defaults.integer(forKey: "p4Wounds"))
+        getPlayer4Status()
+    }
+    func getPlayer1Status() {
+        if defaults.integer(forKey: "p1Souls") == 10 {
+            p1Status.image = UIImage(named: "win.png")
+        } else if defaults.integer(forKey: "p1Wounds") == 5 {
+            p1Status.image = UIImage(named: "dead.png")
+        } else {
+            p1Status.image = UIImage(named: "alive.png")
+        }
+    }
+    func getPlayer2Status() {
+        if defaults.integer(forKey: "p2Souls") == 10 {
+            p2Status.image = UIImage(named: "win.png")
+        } else if defaults.integer(forKey: "p2Wounds") == 5 {
+            p2Status.image = UIImage(named: "dead.png")
+        } else {
+            p2Status.image = UIImage(named: "alive.png")
+        }
+    }
+    
+    func getPlayer3Status() {
+        if defaults.integer(forKey: "p3Souls") == 10 {
+            p3Status.image = UIImage(named: "win.png")
+        } else if defaults.integer(forKey: "p3Wounds") == 5 {
+            p3Status.image = UIImage(named: "dead.png")
+        } else {
+            p3Status.image = UIImage(named: "alive.png")
+        }
+    }
+    
+    func getPlayer4Status() {
+        if defaults.integer(forKey: "p4Souls") == 10 {
+            p4Status.image = UIImage(named: "win.png")
+        } else if defaults.integer(forKey: "p4Wounds") == 5 {
+            p4Status.image = UIImage(named: "dead.png")
+        } else {
+            p4Status.image = UIImage(named: "alive.png")
+        }
     }
 
 }

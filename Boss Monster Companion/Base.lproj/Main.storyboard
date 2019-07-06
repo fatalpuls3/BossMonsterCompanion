@@ -22,7 +22,7 @@
                                 <rect key="frame" x="193.5" y="92.5" width="280" height="190"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boss_logo" translatesAutoresizingMaskIntoConstraints="NO" id="RFP-Xj-meL" customClass="Copy">
-                                        <rect key="frame" x="8" y="8" width="264" height="54.000000000000057"/>
+                                        <rect key="frame" x="8" y="8" width="264" height="54"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="54" id="Ogb-UN-sMH"/>
                                             <constraint firstAttribute="width" constant="264" id="T4W-wv-vYm"/>
@@ -272,7 +272,7 @@ Brotherwise Games LLC 2018</string>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Boss_icon_portrait" translatesAutoresizingMaskIntoConstraints="NO" id="0Ki-ue-Mt6">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alive" translatesAutoresizingMaskIntoConstraints="NO" id="0Ki-ue-Mt6">
                                                 <rect key="frame" x="37.5" y="181" width="70" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="70" id="02K-6x-eGa"/>
@@ -390,7 +390,7 @@ Brotherwise Games LLC 2018</string>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Boss_icon_portrait" translatesAutoresizingMaskIntoConstraints="NO" id="rtl-2A-5PU">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alive" translatesAutoresizingMaskIntoConstraints="NO" id="rtl-2A-5PU">
                                                 <rect key="frame" x="37.5" y="181" width="70" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="4UJ-HV-cbZ"/>
@@ -508,7 +508,7 @@ Brotherwise Games LLC 2018</string>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Boss_icon_portrait" translatesAutoresizingMaskIntoConstraints="NO" id="rCH-rM-j1D">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alive" translatesAutoresizingMaskIntoConstraints="NO" id="rCH-rM-j1D">
                                                 <rect key="frame" x="37.5" y="181" width="70" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="HUv-vq-Z1Q"/>
@@ -626,7 +626,7 @@ Brotherwise Games LLC 2018</string>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Boss_icon_portrait" translatesAutoresizingMaskIntoConstraints="NO" id="Ho1-Ks-UJJ">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alive" translatesAutoresizingMaskIntoConstraints="NO" id="Ho1-Ks-UJJ">
                                                 <rect key="frame" x="37.5" y="181" width="70" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="2MZ-S0-ELv"/>
@@ -729,15 +729,19 @@ Brotherwise Games LLC 2018</string>
                     <connections>
                         <outlet property="p1NameField" destination="IiA-Fk-e4S" id="CVo-yo-Ljz"/>
                         <outlet property="p1SoulsValue" destination="Qcg-6U-TLY" id="lJT-I9-23A"/>
+                        <outlet property="p1Status" destination="0Ki-ue-Mt6" id="5ml-QB-God"/>
                         <outlet property="p1WoundsValue" destination="QEQ-zp-4L7" id="oLz-Ny-Em0"/>
                         <outlet property="p2NameField" destination="R5y-d7-mWD" id="a2w-3Q-grz"/>
                         <outlet property="p2SoulsValue" destination="flF-6x-7oX" id="Oiz-dH-rNl"/>
+                        <outlet property="p2Status" destination="rtl-2A-5PU" id="K45-RO-s3n"/>
                         <outlet property="p2WoundsValue" destination="CXe-Jh-GJK" id="ZLE-Ek-WaP"/>
                         <outlet property="p3NameField" destination="y0a-xd-Sab" id="MEK-OD-Eai"/>
                         <outlet property="p3SoulsValue" destination="kSS-pF-8un" id="vHO-mV-5gQ"/>
+                        <outlet property="p3Status" destination="rCH-rM-j1D" id="n7X-Ce-Nr8"/>
                         <outlet property="p3WoundsValue" destination="vUj-C7-Gbz" id="xaU-i2-w63"/>
                         <outlet property="p4NameField" destination="SWz-tz-Kbe" id="L72-fx-Pwl"/>
                         <outlet property="p4SoulsValue" destination="D3W-vF-mdY" id="gM2-NP-PLL"/>
+                        <outlet property="p4Status" destination="Ho1-Ks-UJJ" id="J6H-mP-KkV"/>
                         <outlet property="p4WoundsValue" destination="jkF-L2-kq4" id="bzq-9q-iMO"/>
                     </connections>
                 </viewController>
@@ -770,10 +774,10 @@ Brotherwise Games LLC 2018</string>
         <image name="256px-Speaker_Icon.png" width="256" height="256"/>
         <image name="AddPoint" width="50" height="50"/>
         <image name="BossMonsterCompanionLogo" width="504" height="180"/>
-        <image name="Boss_icon_portrait" width="235" height="173"/>
         <image name="MinusPoint" width="50" height="50"/>
         <image name="Soul" width="50" height="75"/>
         <image name="Wound" width="50" height="75"/>
+        <image name="alive" width="235" height="173"/>
         <image name="boss_logo" width="589" height="197"/>
         <image name="icons8-body-armor-filled-30" width="30" height="30"/>
         <image name="icons8-defense-filled-50" width="50" height="50"/>
